@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ExerciseGOModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ActivityLog">
+          <Key>
+            <PropertyRef Name="ActivityLogID" />
+          </Key>
+          <Property Name="ActivityLogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LogDate" Type="datetime" />
+          <Property Name="TotalReps" Type="int" />
+          <Property Name="TotalSets" Type="int" />
+          <Property Name="Notes" Type="nvarchar" MaxLength="500" />
+          <Property Name="AspNetUserID" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="VideoID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Emoji">
+          <Key>
+            <PropertyRef Name="EmojiID" />
+          </Key>
+          <Property Name="EmojiID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmojiName" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Game">
+          <Key>
+            <PropertyRef Name="GameID" />
+          </Key>
+          <Property Name="GameID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Point" Type="int" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="IsSocial" Type="bit" Nullable="false" />
+          <Property Name="LevelID" Type="int" Nullable="false" />
+          <Property Name="AspNetUserID" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="VideoID" Type="int" Nullable="false" />
+          <Property Name="EmojiId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Stage">
+          <Key>
+            <PropertyRef Name="LevelID" />
+          </Key>
+          <Property Name="LevelID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LevelName" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TargetArea">
+          <Key>
+            <PropertyRef Name="TargetAreaID" />
+          </Key>
+          <Property Name="TargetAreaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TargetAreaName" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Video">
+          <Key>
+            <PropertyRef Name="VideoID" />
+          </Key>
+          <Property Name="VideoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="VideoLink" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="VideoName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="IsWatch" Type="bit" Nullable="false" />
+          <Property Name="IsBonus" Type="bit" Nullable="false" />
+          <Property Name="TargetAreaID" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_ActivityLog_Video">
+          <End Role="Video" Type="Self.Video" Multiplicity="1" />
+          <End Role="ActivityLog" Type="Self.ActivityLog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Video">
+              <PropertyRef Name="VideoID" />
+            </Principal>
+            <Dependent Role="ActivityLog">
+              <PropertyRef Name="VideoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Game_Emoji">
+          <End Role="Emoji" Type="Self.Emoji" Multiplicity="1" />
+          <End Role="Game" Type="Self.Game" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Emoji">
+              <PropertyRef Name="EmojiID" />
+            </Principal>
+            <Dependent Role="Game">
+              <PropertyRef Name="EmojiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Game_Stage">
+          <End Role="Stage" Type="Self.Stage" Multiplicity="1" />
+          <End Role="Game" Type="Self.Game" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Stage">
+              <PropertyRef Name="LevelID" />
+            </Principal>
+            <Dependent Role="Game">
+              <PropertyRef Name="LevelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Game_Video">
+          <End Role="Video" Type="Self.Video" Multiplicity="1" />
+          <End Role="Game" Type="Self.Game" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Video">
+              <PropertyRef Name="VideoID" />
+            </Principal>
+            <Dependent Role="Game">
+              <PropertyRef Name="VideoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Video_TargetArea">
+          <End Role="TargetArea" Type="Self.TargetArea" Multiplicity="1" />
+          <End Role="Video" Type="Self.Video" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TargetArea">
+              <PropertyRef Name="TargetAreaID" />
+            </Principal>
+            <Dependent Role="Video">
+              <PropertyRef Name="TargetAreaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ExerciseGOModelStoreContainer">
+          <EntitySet Name="ActivityLog" EntityType="Self.ActivityLog" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Emoji" EntityType="Self.Emoji" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Game" EntityType="Self.Game" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Stage" EntityType="Self.Stage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TargetArea" EntityType="Self.TargetArea" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Video" EntityType="Self.Video" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_ActivityLog_Video" Association="Self.FK_ActivityLog_Video">
+            <End Role="Video" EntitySet="Video" />
+            <End Role="ActivityLog" EntitySet="ActivityLog" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Game_Emoji" Association="Self.FK_Game_Emoji">
+            <End Role="Emoji" EntitySet="Emoji" />
+            <End Role="Game" EntitySet="Game" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Game_Stage" Association="Self.FK_Game_Stage">
+            <End Role="Stage" EntitySet="Stage" />
+            <End Role="Game" EntitySet="Game" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Game_Video" Association="Self.FK_Game_Video">
+            <End Role="Video" EntitySet="Video" />
+            <End Role="Game" EntitySet="Game" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Video_TargetArea" Association="Self.FK_Video_TargetArea">
+            <End Role="TargetArea" EntitySet="TargetArea" />
+            <End Role="Video" EntitySet="Video" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ExerciseGOModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Emoji">
+          <Key>
+            <PropertyRef Name="EmojiID" />
+          </Key>
+          <Property Name="EmojiID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmojiName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Games" Relationship="Self.FK_Game_Emoji" FromRole="Emoji" ToRole="Game" />
+        </EntityType>
+        <EntityType Name="Game">
+          <Key>
+            <PropertyRef Name="GameID" />
+          </Key>
+          <Property Name="GameID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Point" Type="Int32" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IsSocial" Type="Boolean" Nullable="false" />
+          <Property Name="LevelID" Type="Int32" Nullable="false" />
+          <Property Name="AspNetUserID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VideoID" Type="Int32" Nullable="false" />
+          <Property Name="EmojiId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Emoji" Relationship="Self.FK_Game_Emoji" FromRole="Game" ToRole="Emoji" />
+          <NavigationProperty Name="Stage" Relationship="Self.FK_Game_Stage" FromRole="Game" ToRole="Stage" />
+          <NavigationProperty Name="Video" Relationship="Self.FK_Game_Video" FromRole="Game" ToRole="Video" />
+        </EntityType>
+        <EntityType Name="Stage">
+          <Key>
+            <PropertyRef Name="LevelID" />
+          </Key>
+          <Property Name="LevelID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LevelName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Games" Relationship="Self.FK_Game_Stage" FromRole="Stage" ToRole="Game" />
+        </EntityType>
+        <EntityType Name="TargetArea">
+          <Key>
+            <PropertyRef Name="TargetAreaID" />
+          </Key>
+          <Property Name="TargetAreaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TargetAreaName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Videos" Relationship="Self.FK_Video_TargetArea" FromRole="TargetArea" ToRole="Video" />
+        </EntityType>
+        <EntityType Name="Video">
+          <Key>
+            <PropertyRef Name="VideoID" />
+          </Key>
+          <Property Name="VideoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="VideoLink" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VideoName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IsWatch" Type="Boolean" Nullable="false" />
+          <Property Name="IsBonus" Type="Boolean" Nullable="false" />
+          <Property Name="TargetAreaID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Games" Relationship="Self.FK_Game_Video" FromRole="Video" ToRole="Game" />
+          <NavigationProperty Name="TargetArea" Relationship="Self.FK_Video_TargetArea" FromRole="Video" ToRole="TargetArea" />
+          <NavigationProperty Name="ActivityLogs" Relationship="Self.FK_ActivityLog_Video" FromRole="Video" ToRole="ActivityLog" />
+        </EntityType>
+        <EntityType Name="ActivityLog">
+          <Key>
+            <PropertyRef Name="ActivityLogID" />
+          </Key>
+          <Property Name="ActivityLogID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LogDate" Type="DateTime" Precision="3" />
+          <Property Name="TotalReps" Type="Int32" />
+          <Property Name="TotalSets" Type="Int32" />
+          <Property Name="Notes" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="AspNetUserID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VideoID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Video" Relationship="Self.FK_ActivityLog_Video" FromRole="ActivityLog" ToRole="Video" />
+        </EntityType>
+        <Association Name="FK_Game_Emoji">
+          <End Role="Emoji" Type="Self.Emoji" Multiplicity="1" />
+          <End Role="Game" Type="Self.Game" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Emoji">
+              <PropertyRef Name="EmojiID" />
+            </Principal>
+            <Dependent Role="Game">
+              <PropertyRef Name="EmojiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Game_Stage">
+          <End Role="Stage" Type="Self.Stage" Multiplicity="1" />
+          <End Role="Game" Type="Self.Game" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Stage">
+              <PropertyRef Name="LevelID" />
+            </Principal>
+            <Dependent Role="Game">
+              <PropertyRef Name="LevelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Game_Video">
+          <End Role="Video" Type="Self.Video" Multiplicity="1" />
+          <End Role="Game" Type="Self.Game" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Video">
+              <PropertyRef Name="VideoID" />
+            </Principal>
+            <Dependent Role="Game">
+              <PropertyRef Name="VideoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Video_TargetArea">
+          <End Role="TargetArea" Type="Self.TargetArea" Multiplicity="1" />
+          <End Role="Video" Type="Self.Video" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TargetArea">
+              <PropertyRef Name="TargetAreaID" />
+            </Principal>
+            <Dependent Role="Video">
+              <PropertyRef Name="TargetAreaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ActivityLog_Video">
+          <End Role="Video" Type="Self.Video" Multiplicity="1" />
+          <End Role="ActivityLog" Type="Self.ActivityLog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Video">
+              <PropertyRef Name="VideoID" />
+            </Principal>
+            <Dependent Role="ActivityLog">
+              <PropertyRef Name="VideoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ExerciseGOEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Emojis" EntityType="Self.Emoji" />
+          <EntitySet Name="Games" EntityType="Self.Game" />
+          <EntitySet Name="Stages" EntityType="Self.Stage" />
+          <EntitySet Name="TargetAreas" EntityType="Self.TargetArea" />
+          <EntitySet Name="Videos" EntityType="Self.Video" />
+          <EntitySet Name="ActivityLogs" EntityType="Self.ActivityLog" />
+          <AssociationSet Name="FK_Game_Emoji" Association="Self.FK_Game_Emoji">
+            <End Role="Emoji" EntitySet="Emojis" />
+            <End Role="Game" EntitySet="Games" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Game_Stage" Association="Self.FK_Game_Stage">
+            <End Role="Stage" EntitySet="Stages" />
+            <End Role="Game" EntitySet="Games" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Game_Video" Association="Self.FK_Game_Video">
+            <End Role="Video" EntitySet="Videos" />
+            <End Role="Game" EntitySet="Games" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Video_TargetArea" Association="Self.FK_Video_TargetArea">
+            <End Role="TargetArea" EntitySet="TargetAreas" />
+            <End Role="Video" EntitySet="Videos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ActivityLog_Video" Association="Self.FK_ActivityLog_Video">
+            <End Role="Video" EntitySet="Videos" />
+            <End Role="ActivityLog" EntitySet="ActivityLogs" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ExerciseGOModelStoreContainer" CdmEntityContainer="ExerciseGOEntities">
+          <EntitySetMapping Name="Emojis">
+            <EntityTypeMapping TypeName="ExerciseGOModel.Emoji">
+              <MappingFragment StoreEntitySet="Emoji">
+                <ScalarProperty Name="EmojiID" ColumnName="EmojiID" />
+                <ScalarProperty Name="EmojiName" ColumnName="EmojiName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Games">
+            <EntityTypeMapping TypeName="ExerciseGOModel.Game">
+              <MappingFragment StoreEntitySet="Game">
+                <ScalarProperty Name="GameID" ColumnName="GameID" />
+                <ScalarProperty Name="Point" ColumnName="Point" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="IsSocial" ColumnName="IsSocial" />
+                <ScalarProperty Name="LevelID" ColumnName="LevelID" />
+                <ScalarProperty Name="AspNetUserID" ColumnName="AspNetUserID" />
+                <ScalarProperty Name="VideoID" ColumnName="VideoID" />
+                <ScalarProperty Name="EmojiId" ColumnName="EmojiId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Stages">
+            <EntityTypeMapping TypeName="ExerciseGOModel.Stage">
+              <MappingFragment StoreEntitySet="Stage">
+                <ScalarProperty Name="LevelID" ColumnName="LevelID" />
+                <ScalarProperty Name="LevelName" ColumnName="LevelName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TargetAreas">
+            <EntityTypeMapping TypeName="ExerciseGOModel.TargetArea">
+              <MappingFragment StoreEntitySet="TargetArea">
+                <ScalarProperty Name="TargetAreaID" ColumnName="TargetAreaID" />
+                <ScalarProperty Name="TargetAreaName" ColumnName="TargetAreaName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Videos">
+            <EntityTypeMapping TypeName="ExerciseGOModel.Video">
+              <MappingFragment StoreEntitySet="Video">
+                <ScalarProperty Name="VideoID" ColumnName="VideoID" />
+                <ScalarProperty Name="VideoLink" ColumnName="VideoLink" />
+                <ScalarProperty Name="VideoName" ColumnName="VideoName" />
+                <ScalarProperty Name="IsWatch" ColumnName="IsWatch" />
+                <ScalarProperty Name="IsBonus" ColumnName="IsBonus" />
+                <ScalarProperty Name="TargetAreaID" ColumnName="TargetAreaID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ActivityLogs">
+            <EntityTypeMapping TypeName="ExerciseGOModel.ActivityLog">
+              <MappingFragment StoreEntitySet="ActivityLog">
+                <ScalarProperty Name="ActivityLogID" ColumnName="ActivityLogID" />
+                <ScalarProperty Name="LogDate" ColumnName="LogDate" />
+                <ScalarProperty Name="TotalReps" ColumnName="TotalReps" />
+                <ScalarProperty Name="TotalSets" ColumnName="TotalSets" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="AspNetUserID" ColumnName="AspNetUserID" />
+                <ScalarProperty Name="VideoID" ColumnName="VideoID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -54,15 +54,15 @@ namespace ExerciseGO
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "142424689691222",
+               appSecret: "5f7ce0ab8ac599d8770397463c9ea553");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "655747601238-qmg4j00gvc22b18jcoar0jkvqg74em68.apps.googleusercontent.com",
+                ClientSecret = "OPDI9Kr9gzIDmorrqz5uxSt5"
+            });
         }
     }
 }
