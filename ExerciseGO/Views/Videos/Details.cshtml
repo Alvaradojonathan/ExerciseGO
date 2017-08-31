@@ -1,0 +1,66 @@
+﻿@model ExerciseGO.Models.Video
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Video</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VideoLink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VideoLink)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VideoName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VideoName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsWatch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsWatch)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsBonus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsBonus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TargetArea.TargetAreaName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TargetArea.TargetAreaName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Game.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Game.UserName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VideoID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

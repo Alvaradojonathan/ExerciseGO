@@ -12,17 +12,13 @@ namespace ExerciseGO.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class ActivityLog
+    public partial class AspNetUserClaim
     {
-        public int ActivityLogID { get; set; }
-        public System.DateTime LogDate { get; set; }
-        public Nullable<int> TotalReps { get; set; }
-        public Nullable<int> TotalSets { get; set; }
-        public string Notes { get; set; }
-        public string AspNetUserID { get; set; }
-        public int TargetAreaID { get; set; }
+        public int Id { get; set; }
+        public string UserId { get; set; }
+        public string ClaimType { get; set; }
+        public string ClaimValue { get; set; }
     
         public virtual AspNetUser AspNetUser { get; set; }
-        public virtual TargetArea TargetArea { get; set; }
     }
 }

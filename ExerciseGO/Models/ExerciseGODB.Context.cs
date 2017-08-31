@@ -31,5 +31,9 @@ namespace ExerciseGO.Models
         public virtual DbSet<TargetArea> TargetAreas { get; set; }
         public virtual DbSet<Video> Videos { get; set; }
         public virtual DbSet<ActivityLog> ActivityLogs { get; set; }
+        public virtual DbSet<AspNetRole> AspNetRoles { get; set; }
+        public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
+        public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
+        public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
     }
 }

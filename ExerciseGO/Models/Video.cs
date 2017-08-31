@@ -14,24 +14,15 @@ namespace ExerciseGO.Models
     
     public partial class Video
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Video()
-        {
-            this.Games = new HashSet<Game>();
-            this.ActivityLogs = new HashSet<ActivityLog>();
-        }
-    
         public int VideoID { get; set; }
         public string VideoLink { get; set; }
         public string VideoName { get; set; }
         public bool IsWatch { get; set; }
         public bool IsBonus { get; set; }
         public int TargetAreaID { get; set; }
+        public int GameID { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Game> Games { get; set; }
         public virtual TargetArea TargetArea { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ActivityLog> ActivityLogs { get; set; }
+        public virtual Game Game { get; set; }
     }
 }

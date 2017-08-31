@@ -18,6 +18,7 @@ namespace ExerciseGO.Models
         public TargetArea()
         {
             this.Videos = new HashSet<Video>();
+            this.ActivityLogs = new HashSet<ActivityLog>();
         }
     
         public int TargetAreaID { get; set; }
@@ -25,5 +26,7 @@ namespace ExerciseGO.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Video> Videos { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ActivityLog> ActivityLogs { get; set; }
     }
 }

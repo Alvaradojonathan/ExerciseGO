@@ -12,26 +12,18 @@ namespace ExerciseGO.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Game
+    public partial class AspNetRole
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Game()
+        public AspNetRole()
         {
-            this.Videos = new HashSet<Video>();
+            this.AspNetUsers = new HashSet<AspNetUser>();
         }
     
-        public int GameID { get; set; }
-        public int Point { get; set; }
-        public string UserName { get; set; }
-        public Nullable<bool> IsSocial { get; set; }
-        public int LevelID { get; set; }
-        public string AspNetUserID { get; set; }
-        public int EmojiID { get; set; }
+        public string Id { get; set; }
+        public string Name { get; set; }
     
-        public virtual Stage Stage { get; set; }
-        public virtual AspNetUser AspNetUser { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Video> Videos { get; set; }
-        public virtual Emoji Emoji { get; set; }
+        public virtual ICollection<AspNetUser> AspNetUsers { get; set; }
     }
 }
