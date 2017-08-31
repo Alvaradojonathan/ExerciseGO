@@ -216,6 +216,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ActivityLogsController.cs" />
     <Compile Include="Controllers\EmojisController.cs" />
     <Compile Include="Controllers\GamesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -392,6 +393,11 @@
     <Content Include="Views\Games\Details.cshtml" />
     <Content Include="Views\Games\Edit.cshtml" />
     <Content Include="Views\Games\Index.cshtml" />
+    <Content Include="Views\ActivityLogs\Create.cshtml" />
+    <Content Include="Views\ActivityLogs\Delete.cshtml" />
+    <Content Include="Views\ActivityLogs\Details.cshtml" />
+    <Content Include="Views\ActivityLogs\Edit.cshtml" />
+    <Content Include="Views\ActivityLogs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
