@@ -21,8 +21,10 @@ namespace ExerciseGO.Models
         public bool IsBonus { get; set; }
         public int TargetAreaID { get; set; }
         public int GameID { get; set; }
+        public int VideoStart { get; set; }
+        public int VideoEnd { get; set; }
     
-        public virtual TargetArea TargetArea { get; set; }
         public virtual Game Game { get; set; }
+        public virtual TargetArea TargetArea { get; set; }
     }
 }

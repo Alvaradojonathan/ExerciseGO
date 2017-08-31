@@ -6,8 +6,11 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    @*<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABcoSsibpI8dQfUsSjdbQrpm6d0VnIH5w&libraries=places"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABcoSsibpI8dQfUsSjdbQrpm6d0VnIH5w&libraries=places&callback=initMap" async defer></script>
+    <script src="~/Content/Maps.js"></script>*@
 </head>
+
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -31,6 +34,16 @@
     </div>
     <div class="container body-content">
         @RenderBody()
+        <div id="map"></div>
+        @*Google Maps Embed API
+        The Google Maps Embed API lets you place an interactive map, or Street View panorama on your site with a simple HTTP request.
+            It can be easily embedded in your web page or blog by setting the Google Maps Embed API URL as the src attribute of an 
+            iframe:*@
+
+        <iframe width="800"
+                height="550"
+                frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyABcoSsibpI8dQfUsSjdbQrpm6d0VnIH5w&q=gymCleveland,OH" allowfullscreen addmarker></iframe>
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>

@@ -12,7 +12,6 @@
         <EntityTypeShape EntityType="ExerciseGOModel.Video" Width="1.5" PointX="8.125" PointY="2.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ExerciseGOModel.ActivityLog" Width="1.5" PointX="11.125" PointY="4.25" IsExpanded="true" />
         <AssociationConnector Association="ExerciseGOModel.FK_Game_Stage" ManuallyRouted="false" />
-        <AssociationConnector Association="ExerciseGOModel.FK_Video_TargetArea" ManuallyRouted="false" />
         <EntityTypeShape EntityType="ExerciseGOModel.AspNetRole" Width="1.5" PointX="0.75" PointY="11.5" />
         <EntityTypeShape EntityType="ExerciseGOModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="12.625" />
         <EntityTypeShape EntityType="ExerciseGOModel.AspNetUserLogin" Width="1.5" PointX="3.25" PointY="9.875" />
@@ -22,9 +21,10 @@
         <AssociationConnector Association="ExerciseGOModel.AspNetUserRoles" />
         <AssociationConnector Association="ExerciseGOModel.FK_ActivityLog_AspNetUsers" />
         <AssociationConnector Association="ExerciseGOModel.FK_Game_AspNetUsers" />
-        <AssociationConnector Association="ExerciseGOModel.FK_Video_Game" />
         <AssociationConnector Association="ExerciseGOModel.FK_Game_Emoji1" />
         <AssociationConnector Association="ExerciseGOModel.FK_ActivityLog_TargetArea" />
+        <AssociationConnector Association="ExerciseGOModel.FK_Video_Game" />
+        <AssociationConnector Association="ExerciseGOModel.FK_Video_TargetArea" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

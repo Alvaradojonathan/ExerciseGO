@@ -17,7 +17,7 @@ namespace ExerciseGO.Controllers
         // GET: Videos
         public ActionResult Index()
         {
-            var videos = db.Videos.Include(v => v.TargetArea).Include(v => v.Game);
+            var videos = db.Videos.Include(v => v.Game).Include(v => v.TargetArea);
             return View(videos.ToList());
         }
 
@@ -39,8 +39,8 @@ namespace ExerciseGO.Controllers
         // GET: Videos/Create
         public ActionResult Create()
         {
-            ViewBag.TargetAreaID = new SelectList(db.TargetAreas, "TargetAreaID", "TargetAreaName");
             ViewBag.GameID = new SelectList(db.Games, "GameID", "UserName");
+            ViewBag.TargetAreaID = new SelectList(db.TargetAreas, "TargetAreaID", "TargetAreaName");
             return View();
         }
 
@@ -49,7 +49,7 @@ namespace ExerciseGO.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "VideoID,VideoLink,VideoName,IsWatch,IsBonus,TargetAreaID,GameID")] Video video)
+        public ActionResult Create([Bind(Include = "VideoID,VideoLink,VideoName,IsWatch,IsBonus,TargetAreaID,GameID,VideoStart,VideoEnd")] Video video)
         {
             if (ModelState.IsValid)
             {
@@ -58,8 +58,8 @@ namespace ExerciseGO.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.TargetAreaID = new SelectList(db.TargetAreas, "TargetAreaID", "TargetAreaName", video.TargetAreaID);
             ViewBag.GameID = new SelectList(db.Games, "GameID", "UserName", video.GameID);
+            ViewBag.TargetAreaID = new SelectList(db.TargetAreas, "TargetAreaID", "TargetAreaName", video.TargetAreaID);
             return View(video);
         }
 
@@ -75,8 +75,8 @@ namespace ExerciseGO.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.TargetAreaID = new SelectList(db.TargetAreas, "TargetAreaID", "TargetAreaName", video.TargetAreaID);
             ViewBag.GameID = new SelectList(db.Games, "GameID", "UserName", video.GameID);
+            ViewBag.TargetAreaID = new SelectList(db.TargetAreas, "TargetAreaID", "TargetAreaName", video.TargetAreaID);
             return View(video);
         }
 
@@ -85,7 +85,7 @@ namespace ExerciseGO.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "VideoID,VideoLink,VideoName,IsWatch,IsBonus,TargetAreaID,GameID")] Video video)
+        public ActionResult Edit([Bind(Include = "VideoID,VideoLink,VideoName,IsWatch,IsBonus,TargetAreaID,GameID,VideoStart,VideoEnd")] Video video)
         {
             if (ModelState.IsValid)
             {
@@ -93,8 +93,8 @@ namespace ExerciseGO.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.TargetAreaID = new SelectList(db.TargetAreas, "TargetAreaID", "TargetAreaName", video.TargetAreaID);
             ViewBag.GameID = new SelectList(db.Games, "GameID", "UserName", video.GameID);
+            ViewBag.TargetAreaID = new SelectList(db.TargetAreas, "TargetAreaID", "TargetAreaName", video.TargetAreaID);
             return View(video);
         }
 

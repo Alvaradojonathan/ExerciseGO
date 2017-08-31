@@ -24,10 +24,16 @@
             @Html.DisplayNameFor(model => model.IsBonus)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.TargetArea.TargetAreaName)
+            @Html.DisplayNameFor(model => model.VideoStart)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VideoEnd)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Game.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TargetArea.TargetAreaName)
         </th>
         <th></th>
     </tr>
@@ -47,10 +53,16 @@
             @Html.DisplayFor(modelItem => item.IsBonus)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.TargetArea.TargetAreaName)
+            @Html.DisplayFor(modelItem => item.VideoStart)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VideoEnd)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Game.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TargetArea.TargetAreaName)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.VideoID }) |

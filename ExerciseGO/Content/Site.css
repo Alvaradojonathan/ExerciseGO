@@ -22,3 +22,13 @@ select,
 textarea {
     max-width: 280px;
 }
+
+#map {
+    height: 50%;
+}
+/* Optional: Makes the sample page fill the window. */
+/*html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}*/
