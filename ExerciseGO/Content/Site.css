@@ -24,11 +24,11 @@ textarea {
 }
 
 #map {
-    height: 50%;
+  height: 350px;
 }
 /* Optional: Makes the sample page fill the window. */
-/*html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

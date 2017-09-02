@@ -4,72 +4,54 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+@*<h2>@Html.DisplayNameFor(model => model.Video.TargetArea.TargetAreaName)</h2>*@
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.VideoLink)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.VideoName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.IsWatch)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.IsBonus)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.VideoStart)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.VideoEnd)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Game.UserName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TargetArea.TargetAreaName)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            <iframe width="560" height="315" src="@Html.DisplayFor(modelItem => item.VideoLink)" frameborder="0" allowfullscreen></iframe>
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.VideoName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.IsWatch)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.IsBonus)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.VideoStart)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.VideoEnd)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Game.UserName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TargetArea.TargetAreaName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.VideoID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.VideoID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.VideoID })
-        </td>
-    </tr>
+@foreach (var item in Model)
+{
+    
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+
+    </div>
+
+    <div class="thumbnail">
+        <a href="@Html.DisplayFor(modelItem => item.VideoLink)" data-lightbox="Abs" id="@Html.DisplayFor(modelItem => item.VideoName)">
+            <img src="~/Content/Image/default.png" />
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    document.getElementById("@Html.DisplayFor(modelItem => item.VideoName)").click();
+                    setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000);
+                });
+            </script>
+        </a>
+        
+        @*<iframe width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>*@
+
+        @Html.DisplayFor(modelItem => item.VideoName)
+
+        @Html.DisplayFor(modelItem => item.IsWatch)
+
+        @Html.DisplayFor(modelItem => item.IsBonus)
+
+        @Html.DisplayFor(modelItem => item.Game.UserName)
+
+
+
+        @Html.ActionLink("Edit", "Edit", new { id = item.VideoID })
+        @Html.ActionLink("Details", "Details", new { id = item.VideoID })
+        @Html.ActionLink("Delete", "Delete", new { id = item.VideoID })
+    </div>
 }
-
-</table>
