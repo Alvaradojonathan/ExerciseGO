@@ -26,9 +26,78 @@ textarea {
 #map {
     height: 50%;
 }
-/* Optional: Makes the sample page fill the window. */
-/*html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}*/
+
+#myBar {
+    width: 10%;
+    height: 30px;
+    
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: white;
+
+    background: #d80d0d;
+    -webkit-animation-name: pulse; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes pulse {
+    0% {
+        background: #d80d0d;
+        
+    }
+
+    25% {
+        background: #d80d0d;
+        
+    }
+
+    50% {
+        background: #d80d0d;
+        
+    }
+
+    75% {
+        background: #db4848;
+    }
+
+    85% {
+        background: #d80d0d;
+        
+    }
+
+    100% {
+        background: #d80d0d;
+        
+    }
+}
+
+@keyframes pulse {
+    0% {
+        background: #d80d0d;
+        
+    }
+
+    25% {
+        background: #d80d0d;
+        
+    }
+
+    50% {
+        background: #d80d0d;
+        
+    }
+
+    75% {
+        background: #db4848;
+    }
+
+    100% {
+        background: #d80d0d;
+        
+    }
+}

@@ -20,7 +20,17 @@ namespace ExerciseGO.Controllers
             var games = db.Games.Include(g => g.Stage).Include(g => g.AspNetUser).Include(g => g.Emoji);
             return View(games.ToList());
         }
-
+       
+        public ActionResult PointsEarned()
+        {
+            var points = (from Games in db.Games
+                                select new
+                                {
+                                    Games.Point
+                                });
+            var pointsEarned = points;
+            return View(points);
+        }
         // GET: Games/Details/5
         public ActionResult Details(int? id)
         {
@@ -33,6 +43,7 @@ namespace ExerciseGO.Controllers
             {
                 return HttpNotFound();
             }
+            
             return View(game);
         }
 

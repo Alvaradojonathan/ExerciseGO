@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExerciseGO.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,8 +12,14 @@ namespace ExerciseGO.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+
+            HomeViewModel viewModel = new HomeViewModel();
+           
+
+            return View(viewModel);
         }
+
+        
 
         public ActionResult About()
         {
@@ -32,5 +39,6 @@ namespace ExerciseGO.Controllers
         {
             return View();
         }
+        
     }
 }
