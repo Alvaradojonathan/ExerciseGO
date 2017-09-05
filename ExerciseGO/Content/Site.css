@@ -46,6 +46,15 @@ html, body {
     z-index: -1;*/
 }
 
+#divider {
+    text-align:center;
+    background-color:gray;
+    padding-top:30px;
+    padding-bottom:30px;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+}
+
 
 .navbar-brand { position: relative; z-index: 2; }
 
