@@ -284,7 +284,21 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Image\abs.jpeg" />
+    <Content Include="Content\Image\arms.jpg" />
+    <Content Include="Content\Image\back.jpg" />
+    <Content Include="Content\Image\BackGroundPicture.jpg" />
+    <Content Include="Content\Image\cardio.jpg" />
+    <Content Include="Content\Image\chest.jpg" />
     <Content Include="Content\Image\default.png" />
+    <Content Include="Content\Image\landingPage.jpg" />
+    <Content Include="Content\Image\legs2.jpeg" />
+    <Content Include="Content\Image\rsz_1arms.jpg" />
+    <Content Include="Content\Image\rsz_abs.jpg" />
+    <Content Include="Content\Image\rsz_back.jpg" />
+    <Content Include="Content\Image\rsz_cardio.jpg" />
+    <Content Include="Content\Image\rsz_chest.jpg" />
+    <Content Include="Content\Image\rsz_legs2.jpg" />
     <Content Include="Content\Maps.js" />
     <Content Include="Content\YouTubePopUp.css" />
     <Content Include="favicon.ico" />
@@ -320,6 +334,7 @@
       <DependentUpon>ExerciseGODB.edmx</DependentUpon>
       <LastGenOutput>ExerciseGODB.cs</LastGenOutput>
     </Content>
+    <Content Include="Navbar.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
