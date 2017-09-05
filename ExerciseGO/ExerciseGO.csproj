@@ -320,6 +320,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ExerciseGODB.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <Content Include="landingPage.js" />
     <Content Include="Models\ExerciseGODB.edmx.diagram">
       <DependentUpon>ExerciseGODB.edmx</DependentUpon>
     </Content>
