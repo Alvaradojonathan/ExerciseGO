@@ -23,7 +23,6 @@
         <AssociationConnector Association="ExerciseGOModel.FK_Game_AspNetUsers" />
         <AssociationConnector Association="ExerciseGOModel.FK_Game_Emoji1" />
         <AssociationConnector Association="ExerciseGOModel.FK_ActivityLog_TargetArea" />
-        <AssociationConnector Association="ExerciseGOModel.FK_Video_Game" />
         <AssociationConnector Association="ExerciseGOModel.FK_Video_TargetArea" />
       </Diagram>
     </edmx:Diagrams>

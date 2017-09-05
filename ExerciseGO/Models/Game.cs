@@ -14,12 +14,6 @@ namespace ExerciseGO.Models
     
     public partial class Game
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Game()
-        {
-            this.Videos = new HashSet<Video>();
-        }
-    
         public int GameID { get; set; }
         public int Point { get; set; }
         public string UserName { get; set; }
@@ -31,7 +25,5 @@ namespace ExerciseGO.Models
         public virtual Stage Stage { get; set; }
         public virtual AspNetUser AspNetUser { get; set; }
         public virtual Emoji Emoji { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Video> Videos { get; set; }
     }
 }

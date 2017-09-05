@@ -107,13 +107,12 @@
           </Key>
           <Property Name="VideoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="VideoName" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="VideoLink" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="VideLink" Type="nvarchar" MaxLength="150" Nullable="false" />
           <Property Name="VideoStart" Type="int" Nullable="false" />
           <Property Name="VideoEnd" Type="int" Nullable="false" />
           <Property Name="IsWatch" Type="bit" Nullable="false" />
           <Property Name="IsBonus" Type="bit" Nullable="false" />
           <Property Name="TargetAreaID" Type="int" Nullable="false" />
-          <Property Name="GameID" Type="int" Nullable="false" />
         </EntityType>
         <Association Name="FK_ActivityLog_AspNetUsers">
           <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
@@ -231,18 +230,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Video_Game">
-          <End Role="Game" Type="Self.Game" Multiplicity="1" />
-          <End Role="Video" Type="Self.Video" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Game">
-              <PropertyRef Name="GameID" />
-            </Principal>
-            <Dependent Role="Video">
-              <PropertyRef Name="GameID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_Video_TargetArea">
           <End Role="TargetArea" Type="Self.TargetArea" Multiplicity="1" />
           <End Role="Video" Type="Self.Video" Multiplicity="*" />
@@ -303,10 +290,6 @@
             <End Role="Stage" EntitySet="Stage" />
             <End Role="Game" EntitySet="Game" />
           </AssociationSet>
-          <AssociationSet Name="FK_Video_Game" Association="Self.FK_Video_Game">
-            <End Role="Game" EntitySet="Game" />
-            <End Role="Video" EntitySet="Video" />
-          </AssociationSet>
           <AssociationSet Name="FK_Video_TargetArea" Association="Self.FK_Video_TargetArea">
             <End Role="TargetArea" EntitySet="TargetArea" />
             <End Role="Video" EntitySet="Video" />
@@ -338,7 +321,6 @@
           <NavigationProperty Name="AspNetUser" Relationship="ExerciseGOModel.FK_Game_AspNetUsers" FromRole="Game" ToRole="AspNetUser" />
           <Property Name="EmojiID" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Emoji" Relationship="ExerciseGOModel.FK_Game_Emoji1" FromRole="Game" ToRole="Emoji" />
-          <NavigationProperty Name="Videos" Relationship="ExerciseGOModel.FK_Video_Game" FromRole="Game" ToRole="Video" />
         </EntityType>
         <EntityType Name="Stage">
           <Key>
@@ -362,16 +344,14 @@
             <PropertyRef Name="VideoID" />
           </Key>
           <Property Name="VideoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="VideoLink" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="VideoName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="IsWatch" Type="Boolean" Nullable="false" />
           <Property Name="IsBonus" Type="Boolean" Nullable="false" />
           <Property Name="TargetAreaID" Type="Int32" Nullable="false" />
-          <Property Name="GameID" Type="Int32" Nullable="false" />
           <Property Name="VideoStart" Type="Int32" Nullable="false" />
           <Property Name="VideoEnd" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Game" Relationship="ExerciseGOModel.FK_Video_Game" FromRole="Video" ToRole="Game" />
           <NavigationProperty Name="TargetArea" Relationship="ExerciseGOModel.FK_Video_TargetArea" FromRole="Video" ToRole="TargetArea" />
+          <Property Name="VideoLink" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="ActivityLog">
           <Key>
@@ -441,10 +421,6 @@
           <AssociationSet Name="FK_ActivityLog_TargetArea" Association="ExerciseGOModel.FK_ActivityLog_TargetArea">
             <End Role="TargetArea" EntitySet="TargetAreas" />
             <End Role="ActivityLog" EntitySet="ActivityLogs" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Video_Game" Association="ExerciseGOModel.FK_Video_Game">
-            <End Role="Game" EntitySet="Games" />
-            <End Role="Video" EntitySet="Videos" />
           </AssociationSet>
           <AssociationSet Name="FK_Video_TargetArea" Association="ExerciseGOModel.FK_Video_TargetArea">
             <End Role="TargetArea" EntitySet="TargetAreas" />
@@ -582,18 +558,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Video_Game">
-          <End Type="ExerciseGOModel.Game" Role="Game" Multiplicity="1" />
-          <End Type="ExerciseGOModel.Video" Role="Video" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Game">
-              <PropertyRef Name="GameID" />
-            </Principal>
-            <Dependent Role="Video">
-              <PropertyRef Name="GameID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_Video_TargetArea">
           <End Type="ExerciseGOModel.TargetArea" Role="TargetArea" Multiplicity="1" />
           <End Type="ExerciseGOModel.Video" Role="Video" Multiplicity="*" />
@@ -652,11 +616,10 @@
           <EntitySetMapping Name="Videos">
             <EntityTypeMapping TypeName="ExerciseGOModel.Video">
               <MappingFragment StoreEntitySet="Video">
+                <ScalarProperty Name="VideoLink" ColumnName="VideLink" />
                 <ScalarProperty Name="VideoEnd" ColumnName="VideoEnd" />
                 <ScalarProperty Name="VideoStart" ColumnName="VideoStart" />
-                <ScalarProperty Name="GameID" ColumnName="GameID" />
                 <ScalarProperty Name="VideoID" ColumnName="VideoID" />
-                <ScalarProperty Name="VideoLink" ColumnName="VideoLink" />
                 <ScalarProperty Name="VideoName" ColumnName="VideoName" />
                 <ScalarProperty Name="IsWatch" ColumnName="IsWatch" />
                 <ScalarProperty Name="IsBonus" ColumnName="IsBonus" />

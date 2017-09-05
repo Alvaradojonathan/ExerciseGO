@@ -15,16 +15,14 @@ namespace ExerciseGO.Models
     public partial class Video
     {
         public int VideoID { get; set; }
-        public string VideoLink { get; set; }
         public string VideoName { get; set; }
         public bool IsWatch { get; set; }
         public bool IsBonus { get; set; }
         public int TargetAreaID { get; set; }
-        public int GameID { get; set; }
         public int VideoStart { get; set; }
         public int VideoEnd { get; set; }
+        public string VideoLink { get; set; }
     
-        public virtual Game Game { get; set; }
         public virtual TargetArea TargetArea { get; set; }
     }
 }
