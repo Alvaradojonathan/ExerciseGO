@@ -4,41 +4,64 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABcoSsibpI8dQfUsSjdbQrpm6d0VnIH5w&libraries=places&callback=initMap" async defer></script>
-    <script src="~/Scripts/Map.js"></script>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-<<<<<<< HEAD
-
 </head>
 
 <body>
-    <div class="jumbotron" id="splash">
-        <div class="container">
-            @Html.Partial("_LoginPartial")
-            <h1>ASP.NET</h1>
-            <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-            <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-        </div>
-    </div>
-    <div class="navbar navbar-inverse">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+        <nav class="navbar navbar-default" style="margin:0px;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Brand</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Gym Locations</a></li>
+                        <li>
+                            <a class="btn btn-default btn-outline btn-circle" data-toggle="collapse" href="#nav-collapse1" aria-expanded="false" aria-controls="nav-collapse1">Activity Log</a>
+                        </li>
+                    </ul>
+                    <ul class="collapse nav navbar-nav nav-collapse" id="nav-collapse1" style="">
+                        <li><a href="#">Cardio</a></li>
+                        <li><a href="#">Back</a></li>
+                        <li><a href="#">Chest</a></li>
+                        <li><a href="#">Abs</a></li>
+                        <li><a href="#">Legs</a></li>
+                        <li><a href="#">Arms</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container -->
+        </nav><!-- /.navbar -->
+
+        <!--LOG IN NAVBAR-->
+        @*<div class="navbar navbar-inverse navbar-fixed-top" style="background-color:transparent; border-color:transparent;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>*@
+                    @*@Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+                @*</div>
+                <div class="navbar-collapse collapse">*@
+                    @*<ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul>*@
+                    @*@Html.Partial("_LoginPartial")
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Gym Locations", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                
-            </div>
         </div>
+<<<<<<< HEAD
     </div>
     <div class="container body-content">
         @RenderBody()
@@ -109,6 +132,7 @@
                 </div>
             </div>
         </div>
+
         <div>*@
         @*Lauren removed the class from the div above this line. The original line was: <div class="container body-content">*@
             @RenderBody()
@@ -118,7 +142,6 @@
                 <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
             </footer>
         
->>>>>>> 0b65b8bec154f0124ea97b8ea77c302a1ff660b8
 
         @Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/bundles/bootstrap")
