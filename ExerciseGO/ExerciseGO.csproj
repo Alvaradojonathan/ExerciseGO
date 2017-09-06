@@ -291,8 +291,6 @@
     <Content Include="Content\Image\cardio.jpg" />
     <Content Include="Content\Image\chest.jpg" />
     <Content Include="Content\Image\default.png" />
-
-
     <Content Include="Content\Image\landingPage.jpg" />
     <Content Include="Content\Image\legs2.jpeg" />
     <Content Include="Content\Image\rsz_1arms.jpg" />
@@ -301,9 +299,6 @@
     <Content Include="Content\Image\rsz_cardio.jpg" />
     <Content Include="Content\Image\rsz_chest.jpg" />
     <Content Include="Content\Image\rsz_legs2.jpg" />
-    <Content Include="Content\Maps.js" />
-
-    <Content Include="Content\YouTubePopUp.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -323,6 +318,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ExerciseGODB.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <Content Include="landingPage.js" />
     <Content Include="Models\ExerciseGODB.edmx.diagram">
       <DependentUpon>ExerciseGODB.edmx</DependentUpon>
     </Content>

@@ -9,29 +9,17 @@ textarea {
     max-width: 280px;
 }
 
-<<<<<<< HEAD
+/*maps*/
+
 #map {
   height: 350px;
 }
+
 /* Optional: Makes the sample page fill the window. */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-}
-
-#splash {
-    margin:0;
-=======
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-/*maps*/
-#map {
-    height: 50%;
 }
 
 /*landing page main picture*/
@@ -128,5 +116,4 @@ html, body {
     .nav-collapse>li { 
         float: none; 
     }
->>>>>>> 0b65b8bec154f0124ea97b8ea77c302a1ff660b8
 }
