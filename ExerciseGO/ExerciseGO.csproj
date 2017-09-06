@@ -299,7 +299,6 @@
     <Content Include="Content\Image\rsz_cardio.jpg" />
     <Content Include="Content\Image\rsz_chest.jpg" />
     <Content Include="Content\Image\rsz_legs2.jpg" />
-    <Content Include="Content\Maps.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
