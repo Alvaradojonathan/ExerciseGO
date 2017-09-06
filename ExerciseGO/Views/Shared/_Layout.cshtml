@@ -12,11 +12,8 @@
 </head>
 
 <body>
-    @*<div class="container-fluid">*@
-        <!-- Second navbar for categories -->
         <nav class="navbar navbar-default" style="margin:0px;">
             <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
@@ -27,7 +24,6 @@
                     <a class="navbar-brand" href="#">Brand</a>
                 </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">Gym Locations</a></li>
@@ -71,21 +67,12 @@
         <div>*@
         @*Lauren removed the class from the div above this line. The original line was: <div class="container body-content">*@
             @RenderBody()
-            <div id="map"></div>
-            @*Google Maps Embed API
-                The Google Maps Embed API lets you place an interactive map, or Street View panorama on your site with a simple HTTP request.
-                    It can be easily embedded in your web page or blog by setting the Google Maps Embed API URL as the src attribute of an
-                    iframe:*@
-
-            <iframe width="800"
-                    height="550"
-                    frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyABcoSsibpI8dQfUsSjdbQrpm6d0VnIH5w&q=gymCleveland,OH" allowfullscreen addmarker></iframe>
+           
             <hr />
             <footer>
                 <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
             </footer>
-        </div>
+        
 
         @Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/bundles/bootstrap")
