@@ -5,18 +5,9 @@
 }
 
 @foreach (var item in Model)
-{    <div class="thumbnail">
-        <a href="@Html.DisplayFor(modelItem => item.VideoLink)" data-lightbox="Abs" id="@Html.DisplayFor(modelItem => item.VideoName)">
-            <img src="~/Content/Image/default.png" />
-            <script type="text/javascript">
-                $(document).ready(function () {
-                    document.getElementById("@Html.DisplayFor(modelItem => item.VideoName)").click();
-                    setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000);
-                });
-            </script>
-        </a>
-        
-        @*<iframe width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>*@
+{
+    <div class="thumbnail">
+        @Html.DisplayFor(modelItem => item.VideoLink)
 
         @Html.DisplayFor(modelItem => item.VideoName)
 
@@ -24,11 +15,8 @@
 
         @Html.DisplayFor(modelItem => item.IsBonus)
 
-        @Html.DisplayFor(modelItem => item.Game.UserName)
-
-
-
         @Html.ActionLink("Edit", "Edit", new { id = item.VideoID })
         @Html.ActionLink("Details", "Details", new { id = item.VideoID })
         @Html.ActionLink("Delete", "Delete", new { id = item.VideoID })
     </div>
+}
