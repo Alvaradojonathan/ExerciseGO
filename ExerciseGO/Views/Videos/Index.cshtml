@@ -7,7 +7,7 @@
 @foreach (var item in Model)
 {
     <div class="thumbnail">
-        @Html.DisplayFor(modelItem => item.VideoLink)
+       <iframe src="@Html.DisplayFor(modelItem => item.VideoLink)"></iframe>
 
         @Html.DisplayFor(modelItem => item.VideoName)
 
