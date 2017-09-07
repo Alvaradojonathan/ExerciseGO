@@ -6,6 +6,7 @@
 
 @foreach (var item in Model)
 {
+
     <div class="col-md-6">
             <div class="col-md-6">
                 <iframe src="@Html.DisplayFor(modelItem => item.VideoLink)" frameborder="0"></iframe>
@@ -15,9 +16,7 @@
                 <p>@Html.DisplayFor(modelItem => item.VideoName)</p>
             </div>
                 @*@Html.DisplayFor(modelItem => item.IsWatch)
-
                 @Html.DisplayFor(modelItem => item.IsBonus)
-
                 @Html.ActionLink("Edit", "Edit", new { id = item.VideoID })
                 @Html.ActionLink("Details", "Details", new { id = item.VideoID })
                 @Html.ActionLink("Delete", "Delete", new { id = item.VideoID })*@
