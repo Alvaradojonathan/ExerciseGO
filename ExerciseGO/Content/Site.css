@@ -32,11 +32,6 @@ html, body {
     background-attachment: fixed;
     background-position: center;
     height: 550px;
-#landingPage {
-    background-image: url('Image/BackGroundPicture.jpg');
-    background-size: 100%;
-    height:600px;
-    background-repeat: no-repeat;
 }
 
 /*divider bar from main picture and grids*/
@@ -54,8 +49,8 @@ html, body {
     background-image: url('Image/bigstock-collage-of-sport-photos-with-p-150968885.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    /*background-attachment: fixed;
-    background-position: center;*/
+    background-attachment: fixed;
+    background-position: center;
     height: 800px;
 }
 
