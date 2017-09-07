@@ -10,7 +10,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-        <nav class="navbar navbar-default" style="margin:0px;">
+        <nav class="navbar navbar-default navbar-fixed-top" style="margin:0px;">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
@@ -25,12 +25,12 @@
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li id="mapGym"><a href="#">Gym Locations</a></li>
+                        <li>@Html.Partial("_LoginPartial")</li>
                         <li>
                             <a class="btn btn-default btn-outline btn-circle" data-toggle="collapse" href="#nav-collapse1" aria-expanded="false" aria-controls="nav-collapse1">Activity Log</a>
                         </li>
-                        
                     </ul>
-                    <ul class="collapse nav navbar-nav nav-collapse" id="nav-collapse1" style="">
+                    <ul class="collapse nav navbar-nav nav-collapse" id="nav-collapse1" style="float:left;">
                         <li><a href="#">Cardio</a></li>
                         <li><a href="#">Back</a></li>
                         <li><a href="#">Chest</a></li>
