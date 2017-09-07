@@ -7,25 +7,26 @@
     <div class="text-center" id="loginPage" style="padding:50px 0">
         <div class="logo"></div>
         <!-- Main Form -->
-        <div class="box" style="width:440px; height:320px; margin-left: 437px; margin-top:43px; background:rgba(0,0,0,0.8);">
-            <h1 style="color:green; padding-top:20px;">Exercise GO</h1>
+        <div class="box" style="width:440px; height:375px; margin-left: 437px; margin-top:50px; background:rgba(0,0,0,0.8);">
+            <h1 style="color:#20E278; padding-top:20px;">Exercise GO</h1>
             <div class="login-form-1">
+                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
                 <form id="login-form" class="text-left">
                     <div class="login-form-main-message"></div>
                     <div class="main-login-form">
-                        <div class="login-group">
+                        <div class="login-group" style="width:310px;">
                             <div class="form-group">
                                 <h2>LOGIN</h2>
-                                <label for="lg_username" class="sr-only">Username</label>
-                                <input type="text" class="form-control" id="lg_username" name="lg_username" placeholder="username">
+                                <label for="lg_username" class="sr-only" >Username</label>
+                                <input type="text" class="form-control" id="lg_username" name="lg_username" placeholder="username" style="height:54px;">
                             </div>
                             <div class="form-group">
-                                <label for="lg_password" class="sr-only">Password</label>
-                                <input type="password" class="form-control" id="lg_password" name="lg_password" placeholder="password">
+                                <label for="lg_password" class="sr-only" >Password</label>
+                                <input type="password" class="form-control" id="lg_password" name="lg_password" placeholder="password" style="height:54px;">
                             </div>
                             <div class="form-group login-group-checkbox">
                                 <input type="checkbox" id="lg_remember" name="lg_remember">
-                                <label for="lg_remember">remember</label>
+                                <label for="lg_remember">remember me</label>
                             </div>
                         </div>
                         <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
@@ -45,11 +46,11 @@
 
 
 
-@*<h2 style="margin-bottom:0px; margin-top:0px; height:0px;">@ViewBag.Title.</h2>
+<h2 style="margin-bottom:0px; margin-top:0px; height:0px;">@ViewBag.Title.</h2>
 <div class="row">
     <div class="col-md-8">
         <section id="loginForm">
-            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            @*@using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))*@
             {
                 @Html.AntiForgeryToken()
                 <hr />
@@ -67,8 +68,8 @@
                         @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
                         @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
                     </div>
-                </div>*@
-                @*<div class="form-group">
+                </div>
+                <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
                         <div class="checkbox">
                             @Html.CheckBoxFor(m => m.RememberMe)
@@ -83,12 +84,12 @@
                 </div>
                 <p>
                     @Html.ActionLink("Register as a new user", "Register")
-                </p>*@
-                @* Enable this once you have account confirmation enabled for password reset functionality
+                </p>
+                Enable this once you have account confirmation enabled for password reset functionality
                     <p>
                         @Html.ActionLink("Forgot your password?", "ForgotPassword")
-                    </p>*@
-            @*}
+                    </p>
+            }
         </section>
     </div>
     <div class="col-md-4">
@@ -100,4 +101,4 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
-}*@
+}
