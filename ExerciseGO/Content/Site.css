@@ -10,9 +10,9 @@ textarea {
 }
 
 /*maps*/
-
 #map {
-  height: 350px;
+    margin-top:5%;
+    height:70%;
 }
 
 /* Optional: Makes the sample page fill the window. */
