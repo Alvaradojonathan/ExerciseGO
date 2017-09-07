@@ -1,7 +1,9 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+
 <div id="landingPage"></div>
+
 
 <div class="col-md-12" id="divider">
     <div class="progress">
@@ -23,17 +25,21 @@
     <div id="map" class="col-md-offset-3 col-md-6"></div>
 </div>*@
 
-<div class="grid">
-    <div class="col-md-12" style="margin-left:85px; width:1230px;">
+
+<div class="container-fluid">
+    <div class="row" style="margin-left:90px;">
+
         <div class="col-md-4" style="padding-left:0px; padding-right:0px; width:390px;">
             <img src="~/Content/Image/rsz_legs2.jpg" style="width:390px; " />
         </div>
-        <div class="col-md-4" style="padding-left:0px; padding-right:0px; width:390px;">
+        <div id="armsClick" onclick="myFunction" class="col-md-4 armsClick" style="padding-left:0px; padding-right:0px; width:390px;">
             <img src="~/Content/Image/rsz_1arms.jpg" style="width:390px;" />
         </div>
         <div class="col-md-4" style="padding-left:0px; padding-right:0px; width:390px;">
             <img src="~/Content/Image/rsz_back.jpg" />
         </div>
+    </div>
+    <div class="row" style="margin-left:90px;">
         <div class="col-md-4" style="padding-left:0px; padding-right:0px; width:390px;">
             <img src="~/Content/Image/rsz_chest.jpg" style="width:390px;" />
         </div>
@@ -44,7 +50,46 @@
             <img src="~/Content/Image/rsz_cardio.jpg" />
         </div>
     </div>
+
+
 </div>
-<div class="row">
-    <div id="map" class="col-md-offset-3 col-md-6"></div>
+
+
+
+<div class="row" id="arms" style="display:none">
+    <h3>ARMS</h3>
+    <img src="~/Content/Image/back.jpg" />
 </div>
+
+
+<div class="row" id="legs">
+    <h3>Description</h3>
+
+</div>
+
+<div class="row" id="chest">
+    <h3>Description</h3>
+
+</div>
+
+
+<div class="row" id="back">
+    <h3>Description</h3>
+
+</div>
+
+
+<div class="row" id="abs">
+    <h3>Description</h3>
+
+</div>
+
+<div class="row" id="cardio">
+    <h3>Description</h3>
+
+</div>
+
+
+
+
+
