@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -280,25 +281,21 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Image\bigstock-collage-of-sport-photos-with-p-150968885.jpg" />
     <Content Include="Content\Image\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Image\abs.jpeg" />
-    <Content Include="Content\Image\arms.jpg" />
-    <Content Include="Content\Image\back.jpg" />
-    <Content Include="Content\Image\BackGroundPicture.jpg" />
-    <Content Include="Content\Image\cardio.jpg" />
-    <Content Include="Content\Image\chest.jpg" />
     <Content Include="Content\Image\default.png" />
-    <Content Include="Content\Image\landingPage.jpg" />
-    <Content Include="Content\Image\legs2.jpeg" />
+    <Content Include="Content\Image\loginPage.jpg" />
     <Content Include="Content\Image\rsz_1arms.jpg" />
+    <Content Include="Content\Image\rsz_1backgroundpicture.jpg" />
     <Content Include="Content\Image\rsz_abs.jpg" />
     <Content Include="Content\Image\rsz_back.jpg" />
     <Content Include="Content\Image\rsz_cardio.jpg" />
     <Content Include="Content\Image\rsz_chest.jpg" />
     <Content Include="Content\Image\rsz_legs2.jpg" />
+
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -319,6 +316,7 @@
       <LastGenOutput>ExerciseGODB.Designer.cs</LastGenOutput>
     </EntityDeploy>
     <Content Include="landingPage.js" />
+    <Content Include="loginPage.js" />
     <Content Include="Models\ExerciseGODB.edmx.diagram">
       <DependentUpon>ExerciseGODB.edmx</DependentUpon>
     </Content>
