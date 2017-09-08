@@ -28,16 +28,7 @@ html, body {
     padding: 0;
 }
 
-.parallax {
-    background-image: url('Image/rsz_1backgroundpicture.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    height: 550px;
-}
 /*landing page main picture*/
-
 .parallax {
     background-image: url('Image/rsz_1backgroundpicture.jpg');
     background-size: cover;
@@ -51,24 +42,23 @@ html, body {
 /*divider bar from main picture and grids*/
 #divider {
     text-align: center;
-    background-color:#fff;
+    background-color: #fff;
     padding-top: 15px;
     padding-bottom: 15px;
     font-family: 'Montserrat', sans-serif;
-    color:slategray;
+    color: slategray;
     box-shadow: 2px 2px 2px gray;
     max-width: 1388.36px;
-    margin: 0;
+    margin: 0px;
 }
-.dividerShadow {
+.dividerShadow{
     border: solid;
     border-color: #ffffff;
     background-color: lightgray;
     box-shadow: 0 2px 0 2px #323F48;
-    margin-top: 0;
-    border-top: 0;
+    margin-top: 0px;
+    border-top: 0px;
 }
-
 /*login page*/
 #loginPage {
     background-image: url('Image/bigstock-collage-of-sport-photos-with-p-150968885.jpg');
@@ -424,6 +414,10 @@ label:hover:before {
 }
 /*=== 9. Misc ===*/
 .logo {
+  padding: 15px 0;
+  font-size: 25px;
+  color: #aaaaaa;
+  font-weight: bold;
     background-image: url('Image/Minimized Logo.png');
     padding: 15px 0;
     font-size: 25px;
@@ -431,25 +425,24 @@ label:hover:before {
     font-weight: bold;
 }
 /*used to close target area divs*/ 
+
 .arrow {
-    cursor: pointer;
+    
     color: white;
     border: 1px solid #AEAEAE;
     border-radius: 30px;
-    background: #605F61;
+    background-color: #605F61;
     font-size: 31px;
     font-weight: bold;
     display: inline-block;
     line-height: 0px;
     padding: 11px 3px;
+    text-decoration: none;
 
-    text-decoration: none;    
 }
-
     .arrow:before {
-        content: "×";      
+        content: "x";
     }
-/*popUpDiv is used for each of the six divs that are shown on home page*/
 .popUpDiv {
     border: solid;
     border-color: #ffffff;
@@ -458,16 +451,27 @@ label:hover:before {
     opacity: .8;
     margin: 0;
 }
-/*thin border around the home page pics*/
 .divGrid {
-
-    padding-left:0px; 
-    padding-right:0px; 
-    width:390px;
-    border:thin;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 390px;
+    border: thin;
     border-color: azure;
     margin: .25px;
     margin-bottom: 0;
     cursor: pointer;
 }
+
+#text {
+   position: absolute;
+   left: 50px;
+   top: 175px;
+   width:70%;
+   color:white;
+   text-align:center;
+   font-size:35px;
+   /*opacity:.7;*/
+}
+
+
 
