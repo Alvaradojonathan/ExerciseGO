@@ -478,4 +478,15 @@ label:hover:before {
     margin: .25px;
     margin-bottom: 0;
 }
+#text {
+    position: absolute;
+   left: 50px;
+   top: 175px;
+   width:70%;
+   color:white;
+   text-align:center;
+   font-size:35px;
+   /*opacity:.7;*/
+}
+
 
