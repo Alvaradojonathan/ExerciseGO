@@ -308,6 +308,8 @@
     <Content Include="Content\Image\F Squats.png" />
     <Content Include="Content\Image\landingPage.jpg" />
     <Content Include="Content\Image\legs2.jpeg" />
+    <Content Include="Content\Image\Logo With Text.png" />
+    <Content Include="Content\Image\Minimized Logo.png" />
     <Content Include="Content\Image\M Abs.png" />
     <Content Include="Content\Image\M Calves Bonus.png" />
     <Content Include="Content\Image\M Chest Bonus.png" />
@@ -384,7 +386,9 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
