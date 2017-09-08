@@ -281,16 +281,34 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+
+
+    <Content Include="Content\Image\bigstock-collage-of-sport-photos-with-p-150968885.jpg" />
+
+
+    <Content Include="Content\Image\bigstock-collage-of-sport-photos-with-p-150968885.jpg" />
+
     <Content Include="Content\Image\abBonusScreenshot.jpg" />
     <Content Include="Content\Image\abScreenshot.jpg" />
     <Content Include="Content\Image\backScreenshot.jpg" />
     <Content Include="Content\Image\bicepScreenshot.jpg" />
     <Content Include="Content\Image\bonusArmScreenshot.jpg" />
     <Content Include="Content\Image\bonusBackScreenshot.jpg" />
+
+
     <Content Include="Content\Image\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+
+
+    <Content Include="Content\Image\default.png" />
+    <Content Include="Content\Image\loginPage.jpg" />
+
+
+    <Content Include="Content\Image\default.png" />
+    <Content Include="Content\Image\loginPage.jpg" />
+
     <Content Include="Content\Image\abs.jpeg" />
     <Content Include="Content\Image\arms.jpg" />
     <Content Include="Content\Image\back.jpg" />
@@ -306,6 +324,8 @@
     <Content Include="Content\Image\F Squats.png" />
     <Content Include="Content\Image\landingPage.jpg" />
     <Content Include="Content\Image\legs2.jpeg" />
+    <Content Include="Content\Image\Logo With Text.png" />
+    <Content Include="Content\Image\Minimized Logo.png" />
     <Content Include="Content\Image\M Abs.png" />
     <Content Include="Content\Image\M Calves Bonus.png" />
     <Content Include="Content\Image\M Chest Bonus.png" />
@@ -319,6 +339,7 @@
     <Content Include="Content\Image\mensBicepBonus.jpg" />
     <Content Include="Content\Image\mensTricepScreenshot.jpg" />
     <Content Include="Content\Image\Row Machine.png" />
+
     <Content Include="Content\Image\rsz_1arms.jpg" />
     <Content Include="Content\Image\rsz_1backgroundpicture.jpg" />
     <Content Include="Content\Image\rsz_abs.jpg" />
@@ -349,6 +370,7 @@
       <LastGenOutput>ExerciseGODB.Designer.cs</LastGenOutput>
     </EntityDeploy>
     <Content Include="landingPage.js" />
+    <Content Include="loginPage.js" />
     <Content Include="Models\ExerciseGODB.edmx.diagram">
       <DependentUpon>ExerciseGODB.edmx</DependentUpon>
     </Content>
@@ -381,7 +403,9 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
