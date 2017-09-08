@@ -1,13 +1,16 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABcoSsibpI8dQfUsSjdbQrpm6d0VnIH5w&libraries=places&callback=initMap" async defer></script>
     <script src="~/Scripts/Map.js"></script>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-        <nav class="navbar navbar-default navbar-fixed-top" style="margin:0px;">
+
+        <nav class="navbar navbar-fixed-top" style="margin:0px; background-color:#ffffff;">
+
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
@@ -16,7 +19,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Brand</a>
+                    <a class="navbar-brand" href="~/Home/Index">Brand</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
@@ -27,13 +30,15 @@
                             <a class="btn btn-default btn-outline btn-circle" data-toggle="collapse" href="#nav-collapse1" aria-expanded="false" aria-controls="nav-collapse1">Activity Log</a>
                         </li>
                     </ul>
-                    <ul class="collapse nav navbar-nav nav-collapse" id="nav-collapse1">
-                        <li><a href="#">Cardio</a></li>
-                        <li><a href="#">Back</a></li>
-                        <li><a href="#">Chest</a></li>
-                        <li><a href="#">Abs</a></li>
-                        <li><a href="#">Legs</a></li>
-                        <li><a href="#">Arms</a></li>
+
+                    <ul class="collapse nav navbar-nav nav-collapse" id="nav-collapse1" style="">
+                        <li><a href="#Cardio" onclick="myFunctionFive()">Cardio</a></li>
+                        <li><a href="#Back " onclick="myFunctionTwo()">Back</a></li>
+                        <li><a href="#Chest" onclick="myFunctionThree()">Chest</a></li>
+                        <li><a href="#Abs" onclick="myFunctionFour()">Abs</a></li>
+                        <li><a href="#Legs" onclick="myFunction()">Legs</a></li>
+                        <li><a href="#Arms" onclick="myFunctionOne()">Arms</a></li>
+
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container -->
