@@ -414,10 +414,10 @@ label:hover:before {
 }
 /*=== 9. Misc ===*/
 .logo {
-  padding: 15px 0;
-  font-size: 25px;
-  color: #aaaaaa;
-  font-weight: bold;
+    padding: 15px 0;
+    font-size: 25px;
+    color: #aaaaaa;
+    font-weight: bold;
     background-image: url('Image/Minimized Logo.png');
     padding: 15px 0;
     font-size: 25px;
@@ -426,8 +426,7 @@ label:hover:before {
 }
 /*used to close target area divs*/ 
 
-.arrow {
-    
+.arrow {    
     color: white;
     border: 1px solid #AEAEAE;
     border-radius: 30px;
