@@ -9,36 +9,33 @@
 
 
 <div class="container-fluid" id="divContainer" style="margin-top:10px; ">
-    <div class="row" style="margin-left:90px; margin-bottom:.5px;">
+    <div class="row" style="margin-left:70px; margin-top:.5px;">
 
         <div class="col-md-4 col-sm-12 divGrid" onclick="myFunction()">
             <img class="img-responsive" src="~/Content/Image/rsz_legs2.jpg" style="width:390px; " />
         </div>
         <div class="col-md-4 col-sm-12 divGrid" onclick="myFunctionOne()">
-            <img class="img-responsive" src="~/Content/Image/rsz_1arms.jpg" style="width:390px; " />
+            <img class="img-responsive" src="~/Content/Image/rsz_1arms.jpg" style="width:390px; margin-right:1px; " />
         </div>
         <div class="col-md-4 col-sm-12 divGrid" onclick="myFunctionTwo()">
-            <img class="img-responsive" src="~/Content/Image/rsz_back.jpg" />
-        </div>
-        <div class="col-md-4" style="padding-left:0px; padding-right:0px; width:390px;">
-            <img src="~/Content/Image/rsz_chest.jpg" style="width:390px;" />
-
-        </div>
-        <div class="row" style="margin-left:90px; margin-top:.5px;">
-            <div class="col-md-4 col-sm-12 divGrid" onclick="myFunctionThree()">
-                <img class="img-responsive" src="~/Content/Image/rsz_chest.jpg" style="width:390px; " />
-            </div>
-            <div class="col-md-4 col-sm-12 divGrid" onclick="myFunctionFour()">
-                <img class="img-responsive" src="~/Content/Image/rsz_abs.jpg" />
-            </div>
-            <div class="col-md-4 col-sm-12 divGrid" onclick="myFunctionFive()">
-                <img class="img-responsive" src="~/Content/Image/rsz_cardio.jpg" />
-            </div>
+            <img class="img-responsive" src="~/Content/Image/rsz_back.jpg" style="margin-left:.5px;"/>
         </div>
     </div>
-
-
+    <div class="row" style="margin-left:70px; margin-top:.5px;">
+        <div class="col-md-4 col-sm-12 divGrid" onclick="myFunctionThree()">
+            <img class="img-responsive" src="~/Content/Image/rsz_chest.jpg" style="width:390px;" />
+        </div>
+        <div class="col-md-4 col-sm-12 divGrid" onclick="myFunctionFour()" style="margin-right:1px;">
+            <img class="img-responsive" src="~/Content/Image/rsz_abs.jpg" />
+        </div>
+        <div class="col-md-4 col-sm-12 divGrid" onclick="myFunctionFive()">
+            <img class="img-responsive" src="~/Content/Image/rsz_cardio.jpg" />
+        </div>
+    </div>
 </div>
+
+
+
 @*legs div*@
 <div class="container" id="legs" style="display:none; margin-top: 10px;">
     <a href="#" class="arrow" style="float:right;" onclick="closeWindow();"></a>
@@ -237,4 +234,4 @@
     </div>
 </div>
 
-        
+

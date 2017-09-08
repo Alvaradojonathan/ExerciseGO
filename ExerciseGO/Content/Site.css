@@ -36,14 +36,23 @@ html, body {
 /*divider bar from main picture and grids*/
 #divider {
     text-align: center;
-    background-color: gray;
+    background-color: #fff;
     padding-top: 15px;
     padding-bottom: 15px;
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: slategray;
     box-shadow: 2px 2px 2px gray;
+    max-width: 1388.36px;
+    margin: 0px;
 }
-
+.dividerShadow{
+    border: solid;
+    border-color: #ffffff;
+    background-color: lightgray;
+    box-shadow: 0 2px 0 2px #323F48;
+    margin-top: 0px;
+    border-top: 0px;
+}
 /*login page*/
 #loginPage {
     background-image: url('Image/bigstock-collage-of-sport-photos-with-p-150968885.jpg');
@@ -401,4 +410,35 @@ label:hover:before {
   color: #aaaaaa;
   font-weight: bold;
 }
-
+.arrow {
+    cursor: pointer;
+    color: white;
+    border: 1px solid #AEAEAE;
+    border-radius: 30px;
+    background-color: #605F61;
+    font-size: 31px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    padding: 11px 3px;
+    text-decoration: none;
+}
+.arrow:before {
+    content: "x";
+}
+.popDiv {
+    border: solid;
+    border-color: #ffffff;
+    background-color: lightgray;
+    box-shadow: 5px 5px 5px grey;
+    margin: 0;
+}
+.divGrid {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 390px;
+    border: thin;
+    border-color: azure;
+    margin: .25px;
+    margin-bottom: 0;
+}
