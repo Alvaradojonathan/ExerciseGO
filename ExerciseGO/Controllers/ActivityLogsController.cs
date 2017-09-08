@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using ExerciseGO.Models;
+using Microsoft.AspNet.Identity;
 
 namespace ExerciseGO.Controllers
 {
@@ -53,6 +54,9 @@ namespace ExerciseGO.Controllers
         {
             if (ModelState.IsValid)
             {
+                var userID = User.Identity.GetUserId();
+                activityLog.AspNetUserID = userID;
+                activityLog.LogDate = DateTime.Now;
                 db.ActivityLogs.Add(activityLog);
                 db.SaveChanges();
                 return RedirectToAction("Index");
