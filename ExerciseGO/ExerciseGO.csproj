@@ -282,6 +282,10 @@
   </ItemGroup>
   <ItemGroup>
 
+
+    <Content Include="Content\Image\bigstock-collage-of-sport-photos-with-p-150968885.jpg" />
+
+
     <Content Include="Content\Image\bigstock-collage-of-sport-photos-with-p-150968885.jpg" />
 
     <Content Include="Content\Image\abBonusScreenshot.jpg" />
@@ -291,10 +295,16 @@
     <Content Include="Content\Image\bonusArmScreenshot.jpg" />
     <Content Include="Content\Image\bonusBackScreenshot.jpg" />
 
+
     <Content Include="Content\Image\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+
+
+    <Content Include="Content\Image\default.png" />
+    <Content Include="Content\Image\loginPage.jpg" />
+
 
     <Content Include="Content\Image\default.png" />
     <Content Include="Content\Image\loginPage.jpg" />
