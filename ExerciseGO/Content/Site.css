@@ -44,6 +44,7 @@ html, body {
     background-attachment: fixed;
     background-position: center;
     height: 550px;
+    text-align:center;
 }
 
 /*divider bar from main picture and grids*/
@@ -429,11 +430,11 @@ label:hover:before {
 }
 /*=== 9. Misc ===*/
 .logo {
-  padding: 15px 0;
-  font-size: 25px;
-  color: #aaaaaa;
-  font-weight: bold;
-
+    padding: 15px 0;
+    font-size: 25px;
+    color: #aaaaaa;
+    font-weight: bold;
+}
 /*used to close target area divs*/ 
 .arrow {
     cursor: pointer;
