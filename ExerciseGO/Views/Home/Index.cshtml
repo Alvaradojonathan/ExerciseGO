@@ -1,12 +1,11 @@
-﻿<div class="parallax"></div>
-
-
-
-
-<div class="row dividerShadow" id="divider">
-    <h1>GYM STUFF</h1>
+<div class="parallax">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <h1 style="font-family: 'Permanent Marker', cursive; color:ghostwhite;padding-top:400px;padding-right:20px;font-size:70px;">ExerciseGO</h1>
 </div>
 
+<div class="row dividerShadow" id="divider">
+    <h1 style="color:#20e278;">TARGET AREAS</h1>
+</div>
 
 <div class="container-fluid" id="divContainer" style="margin-top:10px; ">
     <div class="row" style="margin-left:70px; margin-top:.5px;">
@@ -15,7 +14,7 @@
             <img class="img-responsive" src="~/Content/Image/rsz_legs2.jpg" style="width:390px; " />
         </div>
         <div class="col-md-4 col-sm-12 divGrid" onclick="myFunctionOne()">
-            <img class="img-responsive" src="~/Content/Image/rsz_1arms.jpg" style="width:390px; margin-right:1px; " />
+            <img class="img-responsive" src="~/Content/Image/rsz_1arms.jpg" style="width:390px; margin-right:.5px;" />
         </div>
         <div class="col-md-4 col-sm-12 divGrid" onclick="myFunctionTwo()">
             <img class="img-responsive" src="~/Content/Image/rsz_back.jpg" style="margin-left:.5px;"/>
@@ -25,6 +24,7 @@
         <div class="col-md-4 col-sm-12 divGrid" onclick="myFunctionThree()">
             <img class="img-responsive" src="~/Content/Image/rsz_chest.jpg" style="width:390px;" />
         </div>
+<<<<<<< HEAD
         <div class="col-md-4 col-sm-12 divGrid" onclick="myFunctionFour()" style="margin-right:1px;">
             <img class="img-responsive" src="~/Content/Image/rsz_abs.jpg" />
         </div>
@@ -34,12 +34,11 @@
     </div>
 </div>
 
-
-
 @*legs div*@
 <div class="container" id="legs" style="display:none; margin-top: 10px;">
     <a href="#" class="arrow" style="float:right;" onclick="closeWindow();"></a>
     <div class="row popUpDiv">
+
         <div class="col-md-7">
             <div class="row">
                 <h5>Exercise shown: barbell assisted squats.</h5>
@@ -67,6 +66,7 @@
             <a href="~/Videos/Details/3"><img class="img-responsive" src="~/Content/Image/F Squats.png" /></a>
         </div>
     </div>
+
 </div>
 
 @*arms div*@
@@ -134,7 +134,6 @@
     </div>
 </div>
 
-
 @*chest div*@
 <div class="container" id="chest" style="display:none; margin-top: 10px;">
     <a href="#" class="arrow" style="float:right;" onclick="closeWindowThree();"></a>
@@ -142,10 +141,14 @@
         <div class="col-md-7">
             <div class="row">
                 <h5>Exercise shown: inclined dumbbell press.</h5>
+                </div>
+                <div class="row">
+                    <button class="btn btn-default btn-outline btn-circle">Record Activity</button>
+                    <button class="btn btn-default btn-outline btn-circle">Chest Activity History</button>
+                </div>
             </div>
-            <div class="row">
-                <button class="btn btn-default btn-outline btn-circle">Record Activity</button>
-                <button class="btn btn-default btn-outline btn-circle">Chest Activity History</button>
+            <div class="col-md-5">
+                <a href="~/Videos/Details/16"><img class="img-responsive" src="~/Content/Image/M Chest.png" /></a>
             </div>
         </div>
         <div class="col-md-5">
@@ -156,50 +159,48 @@
         <div class="col-md-7">
             <div class="row">
                 <h5>Exercises shown: inclined dumbell press, the typical bench press, inclined bench press, and machine assisted cable-fly.</h5>
+                </div>
+                <div class="row">
+                    <button class="btn btn-default btn-outline btn-circle">Record Activity</button>
+                    <button class="btn btn-default btn-outline btn-circle">Chest Activity History</button>
+                </div>
             </div>
-            <div class="row">
-                <button class="btn btn-default btn-outline btn-circle">Record Activity</button>
-                <button class="btn btn-default btn-outline btn-circle">Chest Activity History</button>
+            <div class="col-md-5">
+                <a href="~/Videos/Details/24"><img class="img-responsive" src="~/Content/Image/chestScreenshot.jpg" /></a>
             </div>
         </div>
-        <div class="col-md-5">
-            <a href="~/Videos/Details/24"><img class="img-responsive" src="~/Content/Image/chestScreenshot.jpg" /></a>
+    @*abs div*@
+    <div class="container" id="abs" style="display:none; margin-top: 10px;">
+        <a href="#" class="arrow" style="float:right;" onclick="closeWindowFour();"></a>
+        <div class="row popUpDiv">
+            <div class="col-md-7">
+                <div class="row">
+                    <h5>This video shows how to use a weighted barbell to perform back squats, and the reverse lunge.</h5>
+                </div>
+                <div class="row">
+                    <button class="btn btn-default btn-outline btn-circle">Record Activity</button>
+                    <button class="btn btn-default btn-outline btn-circle">Abs Activity History</button>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <a href="~/Videos/Details/15"><img class="img-responsive" src="~/Content/Image/M Abs.png" /></a>
+            </div>
+        </div>
+        <div class="row popUpDiv">
+            <div class="col-md-7">
+                <div class="row">
+                    <h5>This video shows how to use a weighted barbell to perform back squats, and the reverse lunge.</h5>
+                </div>
+                <div class="row">
+                    <button class="btn btn-default btn-outline btn-circle">Record Activity</button>
+                    <button class="btn btn-default btn-outline btn-circle">Abs Activity History</button>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <a href="~/Videos/Details/19"><img class="img-responsive" src="~/Content/Image/abScreenshot.jpg" /></a>
+            </div>
         </div>
     </div>
-</div>
-@*abs div*@
-<div class="container" id="abs" style="display:none; margin-top: 10px;">
-    <a href="#" class="arrow" style="float:right;" onclick="closeWindowFour();"></a>
-    <div class="row popUpDiv">
-        <div class="col-md-7">
-            <div class="row">
-                <h5>This video shows how to use a weighted barbell to perform back squats, and the reverse lunge.</h5>
-            </div>
-            <div class="row">
-                <button class="btn btn-default btn-outline btn-circle">Record Activity</button>
-                <button class="btn btn-default btn-outline btn-circle">Abs Activity History</button>
-            </div>
-        </div>
-        <div class="col-md-5">
-            <a href="~/Videos/Details/15"><img class="img-responsive" src="~/Content/Image/M Abs.png" /></a>
-        </div>
-    </div>
-    <div class="row popUpDiv">
-        <div class="col-md-7">
-            <div class="row">
-                <h5>This video shows how to use a weighted barbell to perform back squats, and the reverse lunge.</h5>
-            </div>
-            <div class="row">
-                <button class="btn btn-default btn-outline btn-circle">Record Activity</button>
-                <button class="btn btn-default btn-outline btn-circle">Abs Activity History</button>
-            </div>
-        </div>
-        <div class="col-md-5">
-            <a href="~/Videos/Details/19"><img class="img-responsive" src="~/Content/Image/abScreenshot.jpg" /></a>
-        </div>
-    </div>
-</div>
-
 
 @*Cardio div*@
 <div class="container" id="cardio" style="display:none; margin-top: 10px;">
@@ -232,6 +233,6 @@
             <a href="~/Videos/Details/10"><img class="img-responsive" src="~/Content/Image/abScreenshot.jpg" /></a>
         </div>
     </div>
-</div>
 
+</div>
 

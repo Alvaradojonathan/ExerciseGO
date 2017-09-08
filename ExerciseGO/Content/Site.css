@@ -11,9 +11,18 @@ textarea {
 
 
 /*maps*/
-
 #map {
+
+
+    margin-top:5%;
+    height:70%;
+
     height: 350px;
+
+
+    margin-top:5%;
+    height:70%;
+
 }
 
 /* Optional: Makes the sample page fill the window. */
@@ -24,6 +33,10 @@ html, body {
 }
 
 /*landing page main picture*/
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6b7cf7f3020a75e283c285e8f31a234d3d71d4a7
 .parallax {
     background-image: url('Image/rsz_1backgroundpicture.jpg');
     background-size: cover;
@@ -31,6 +44,7 @@ html, body {
     background-attachment: fixed;
     background-position: center;
     height: 550px;
+    text-align:center;
 }
 
 /*divider bar from main picture and grids*/
@@ -414,11 +428,21 @@ label:hover:before {
 }
 /*=== 9. Misc ===*/
 .logo {
+<<<<<<< HEAD
   padding: 15px 0;
   font-size: 25px;
   color: #aaaaaa;
   font-weight: bold;
 }
+=======
+    background-image: url('Image/Minimized Logo.png');
+    padding: 15px 0;
+    font-size: 25px;
+    color: #aaaaaa;
+    font-weight: bold;
+}
+/*used to close target area divs*/ 
+>>>>>>> 6b7cf7f3020a75e283c285e8f31a234d3d71d4a7
 .arrow {
     cursor: pointer;
     color: white;
@@ -430,7 +454,12 @@ label:hover:before {
     display: inline-block;
     line-height: 0px;
     padding: 11px 3px;
+<<<<<<< HEAD
     text-decoration: none;
+=======
+
+    text-decoration: none;    
+>>>>>>> 6b7cf7f3020a75e283c285e8f31a234d3d71d4a7
 }
 .arrow:before {
     content: "x";
