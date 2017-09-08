@@ -38,20 +38,34 @@ function createMarker(place) {
         infowindow.open(map, this);
     });
 }
-//$('#mapLink').on('click', function () {
-//    google.maps.event.trigger(map, "resize");
-//});
 
+
+//display legs div
 function myFunction() {
 
-
-    var x = document.getElementById('arms');
+    var x = document.getElementById('divContainer');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
         x.style.display = 'none';
     }
-    x = document.getElementById('armsClick');
+    x = document.getElementById('legs');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+//this function legs div
+function closeWindow() {
+    var x = document.getElementById('legs');
+    if (x.style.display === 'none') {
+        x.style.display = "display";
+    }
+    else {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('divContainer');
     if (x.style.display === 'block') {
         x.style.display = 'none';
     } else {
@@ -59,4 +73,168 @@ function myFunction() {
     }
 }
 
+//display arms div
+function myFunctionOne() {
 
+    var x = document.getElementById('divContainer');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('arms');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+//close arms div
+function closeWindowOne() {
+
+    var x = document.getElementById('arms');
+    if (x.style.display === 'none') {
+        x.style.display = "display";
+    }
+    else {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('divContainer');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+//display back div
+function myFunctionTwo() {
+
+    var x = document.getElementById('divContainer');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('back');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+//close back div
+function closeWindowTwo() {
+
+    var x = document.getElementById('back');
+    if (x.style.display === 'none') {
+        x.style.display = "display";
+    }
+    else {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('divContainer');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+//display chest div
+function myFunctionThree() {
+
+    var x = document.getElementById('divContainer');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('chest');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+//close back div
+function closeWindowThree() {
+
+    var x = document.getElementById('chest');
+    if (x.style.display === 'none') {
+        x.style.display = "display";
+    }
+    else {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('divContainer');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+//display abs div
+function myFunctionFour() {
+
+    var x = document.getElementById('divContainer');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('abs');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+//close abs div
+function closeWindowFour() {
+
+    var x = document.getElementById('abs');
+    if (x.style.display === 'none') {
+        x.style.display = "display";
+    }
+    else {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('divContainer');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+//display cardio div
+function myFunctionFive() {
+
+    var x = document.getElementById('divContainer');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('cardio');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+//close cardio div
+function closeWindowFive() {
+
+    var x = document.getElementById('cardio');
+    if (x.style.display === 'none') {
+        x.style.display = "display";
+    }
+    else {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('divContainer');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
