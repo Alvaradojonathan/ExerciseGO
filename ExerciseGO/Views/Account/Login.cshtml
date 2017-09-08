@@ -11,7 +11,6 @@
         <h1 id="heading">ExerciseGO</h1>
         <div class="row">
             <hr style="margin-top:0px;"/>
-            @*<h4>Sign in with:</h4>*@
             <div class="col-md-6 col-md-offset-1">
                 <section id="loginForm">
                     @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
@@ -31,15 +30,6 @@
                                 @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
                             </div>
                         </div>
-                        @*<div class="form-group">
-                                <div class="col-md-offset-2 col-md-10">
-                                    <div class="checkbox">
-                                        @Html.CheckBoxFor(m => m.RememberMe)
-                                        @Html.LabelFor(m => m.RememberMe)
-                                    </div>
-                                </div>
-                            </div>*@
-
                         <div class="form-group">
                             <div class="col-md-3">
                                 <input type="submit" value="Login" class="btn btn-default" id="loginButton"/>
@@ -48,13 +38,6 @@
                                 <p style="text-align:left; padding-top:60px; padding-left:17px;"><a href="#">@Html.ActionLink("Register", "Register")</a> <a style="display:inline-block; padding-left:40px;" href="#">@Html.ActionLink("Forgot password", "ForgotPassword")</a></p>
                             </div>
                         </div>
-                        @*<p>
-                                @Html.ActionLink("Register as a new user", "Register")
-                            </p>*@
-                        @*Enable this once you have account confirmation enabled for password reset functionality
-                            <p>
-                                @Html.ActionLink("Forgot your password?", "ForgotPassword")
-                            </p>*@
                     }
                 </section>
             </div>
@@ -65,7 +48,6 @@
         </div>
     </div>
 </div>
-
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
