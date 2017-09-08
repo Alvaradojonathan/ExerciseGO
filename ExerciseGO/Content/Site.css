@@ -78,12 +78,21 @@ html, body {
 }
 
 /*navbar!!*/
+
+.navbar-brand { 
+    text-align: justify;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;    
+}
+/*.nav.navbar.navbar-default {
+    opacity: 0.5;*/
+
 .navbar-brand {
     position: relative;
     z-index: 2;
 }
-
-.navbar-nav.navbar-right .btn {
+ .navbar-nav.navbar-right .btn {
     position: relative;
     z-index: 2;
     padding: 4px 20px;
@@ -156,7 +165,7 @@ html, body {
     }
 }
 
-<<<<<<< HEAD
+
 /*login page*/
 /*=== 1. General Structure ===*/
 html,
@@ -437,8 +446,7 @@ label:hover:before {
     display: inline-block;
     line-height: 0px;
     padding: 11px 3px;
-    text-decoration: none;
-    
+    text-decoration: none;    
 }
 
     .arrow:before {
