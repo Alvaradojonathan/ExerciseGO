@@ -1,1 +1,9 @@
 ﻿<div id="map" class="col-md-offset-2 col-md-8"></div>
+<script>
+    window.onload = function () {
+        if (!localStorage.justOnce) {
+            localStorage.setItem("justOnce", "true");
+            window.location.reload();
+        }
+    }
+</script>
