@@ -147,6 +147,7 @@ html,
 body {
     background: #efefef;
     max-width: 100%;
+    height: 637px;
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
 }
