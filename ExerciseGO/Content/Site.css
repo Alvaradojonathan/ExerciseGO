@@ -14,7 +14,7 @@ textarea {
 /*maps*/
 #map {
     margin-top: 5%;
-    height:550px;
+    height: 550px;
 }
 
 /*landing page main picture*/
@@ -352,13 +352,16 @@ span.icon {
 .popUpDiv {
     border: solid;
     border-color: black;
-    background: gray; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, white, gray); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, white, gray); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, white, gray); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, white, gray); /* Standard syntax */
+    background-color: white;
+    box-shadow: 2px 2px 2px darkgray;
+    /*background: gray; 
+    background: -webkit-linear-gradient(left, white, gray); 
+    background: -o-linear-gradient(right, white, gray); 
+    background: -moz-linear-gradient(right, white, gray); 
+    background: linear-gradient(to right, white, gray); */
     opacity: .8;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .divGrid {
@@ -376,68 +379,54 @@ span.icon {
     display: none;
     margin-top: 10px;
     padding: 0;
-    border-radius: 8px;
-    box-shadow: 5px 5px 5px gray;
 }
 
 #arms {
     display: none;
     margin-top: 10px;
     padding: 0;
-    border-radius: 8px;
-    box-shadow: 5px 5px 5px gray;
 }
 
 #abs {
     display: none;
     margin-top: 10px;
     padding: 0;
-    border-radius: 8px;
-    box-shadow: 5px 5px 5px gray;
 }
 
 #chest {
     display: none;
     margin-top: 10px;
     padding: 0;
-    border-radius: 8px;
-    box-shadow: 5px 5px 5px gray;
 }
 
 #back {
     display: none;
     margin-top: 10px;
     padding: 0;
-    border-radius: 8px;
-    box-shadow: 5px 5px 5px gray;
 }
 
 #cardio {
     display: none;
     margin-top: 10px;
     padding: 0;
-    border-radius: 8px;
-    box-shadow: 5px 5px 5px gray;
 }
 
-.bottomRadius {
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-}
-
-.topRadius {
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-}
 
 .picPad {
     margin: 20px;
     margin-left: 0;
+    max-height: 228.61px;
+    
 }
 
     .picPad:hover {
         opacity: 0.7;
     }
+
+.picBorder {
+    border: solid;
+    border-color: black;
+}
 
 .topBtnPos {
     margin-top: 90px;
