@@ -322,6 +322,7 @@
     <Content Include="Content\Image\mensBackScreenshot.jpg" />
     <Content Include="Content\Image\mensBicepBonus.jpg" />
     <Content Include="Content\Image\mensTricepScreenshot.jpg" />
+    <Content Include="Content\Image\newLogo.png" />
     <Content Include="Content\Image\Row Machine.png" />
     <Content Include="Content\Image\rsz_1arms.jpg" />
     <Content Include="Content\Image\rsz_1backgroundpicture.jpg" />
