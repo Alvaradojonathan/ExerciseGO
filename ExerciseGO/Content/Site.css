@@ -365,7 +365,7 @@ span.icon {
 
 .popUpDiv {
     border: solid;
-    border-color: #20e278;
+    border-color: black;
     background: gray; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(left, white, gray); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(right, white, gray); /* For Opera 11.1 to 12.0 */
