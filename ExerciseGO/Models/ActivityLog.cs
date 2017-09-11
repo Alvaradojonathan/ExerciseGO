@@ -11,10 +11,12 @@ namespace ExerciseGO.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class ActivityLog
     {
         public int ActivityLogID { get; set; }
+        [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
         public System.DateTime LogDate { get; set; }
         public Nullable<int> TotalReps { get; set; }
         public Nullable<int> TotalSets { get; set; }
