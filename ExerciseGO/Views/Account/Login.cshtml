@@ -10,7 +10,7 @@
     <div class="box" style="margin-top:140px;">
         <h1 style="padding-top:35px;">Login or <a href="/Account/Register">Register</a></h1>
         <div class="row" style="padding-top:25px;">
-            <hr style="margin-top:0px;"/>
+            <hr style="margin-top:0px;" />
             <div class="col-md-6 col-md-offset-1">
                 <section id="loginForm">
                     @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
@@ -19,12 +19,12 @@
                         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                         <div class="form-group">
                             <div class="col-md-10">
-                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Email"})
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Email" })
                                 @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
                             </div>
                         </div>
-                        <div class="form-group margin-bottom-sm">                        
-                                
+                        <div class="form-group margin-bottom-sm">
+
                             <div class="col-md-10">
                                 @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password" })
                                 @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
@@ -35,19 +35,24 @@
                                 <p><a href="#">@Html.ActionLink("Forgot password", "ForgotPassword")</a></p>
                             </div>
                             <div class="etc-login-form">
-                                <input style="margin-left:9px;"type="submit" value="Login" class="btn btn-default" id="loginButton" />
+                                <input style="margin-left:9px;" type="submit" value="Login" class="btn btn-default" id="loginButton" />
                             </div>
                         </div>
                     }
                 </section>
             </div>
-        
+
             <div class="col-md-4">
                 @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
             </div>
         </div>
+        <div class="text1">
+            <p>An app for begginers to show how to work out target areas of the body, through video based workouts
+            and using activity logs to track progress.</p>
+        </div>
     </div>
 </div>
+
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

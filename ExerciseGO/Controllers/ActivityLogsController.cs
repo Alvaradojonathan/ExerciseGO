@@ -14,11 +14,17 @@ namespace ExerciseGO.Controllers
     public class ActivityLogsController : Controller
     {
         private ExerciseGOEntities db = new ExerciseGOEntities();
-
         // GET: ActivityLogs
+        [Authorize]
         public ActionResult Index()
         {
+            //var user = User.Identity.GetUserId();
             var activityLogs = db.ActivityLogs.Include(a => a.AspNetUser).Include(a => a.TargetArea);
+            //var exclusionKeys = exclusions.Select(x => x.compositeKey);
+            //var resultingPersons = persons.Where(x => !exclusionKeys.Contains(x.compositeKey));
+            //var query = (from e in db.ActivityLogs
+            //             where e.AspNetUserID == user
+            //             select e.ActivityLogID);
             return View(activityLogs.ToList());
         }
 
