@@ -41,7 +41,7 @@ function createMarker(place) {
 
 
 //display legs div
-function myFunction() {
+function openWindow() {
 
     var x = document.getElementById('divContainer');
     if (x.style.display === 'none') {
@@ -74,7 +74,7 @@ function closeWindow() {
 }
 
 //display arms div
-function myFunctionOne() {
+function openWindowOne() {
 
     var x = document.getElementById('divContainer');
     if (x.style.display === 'none') {
@@ -107,7 +107,7 @@ function closeWindowOne() {
     }
 }
 //display back div
-function myFunctionTwo() {
+function openWindowTwo() {
 
     var x = document.getElementById('divContainer');
     if (x.style.display === 'none') {
@@ -140,7 +140,7 @@ function closeWindowTwo() {
     }
 }
 //display chest div
-function myFunctionThree() {
+function openWindowThree() {
 
     var x = document.getElementById('divContainer');
     if (x.style.display === 'none') {
@@ -155,7 +155,7 @@ function myFunctionThree() {
         x.style.display = 'block';
     }
 }
-//close back div
+//close chest div
 function closeWindowThree() {
 
     var x = document.getElementById('chest');
@@ -173,7 +173,7 @@ function closeWindowThree() {
     }
 }
 //display abs div
-function myFunctionFour() {
+function openWindowFour() {
 
     var x = document.getElementById('divContainer');
     if (x.style.display === 'none') {
@@ -206,7 +206,7 @@ function closeWindowFour() {
     }
 }
 //display cardio div
-function myFunctionFive() {
+function openWindowFive() {
 
     var x = document.getElementById('divContainer');
     if (x.style.display === 'none') {
