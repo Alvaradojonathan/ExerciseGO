@@ -37,7 +37,7 @@ textarea {
     font-family: 'Montserrat', sans-serif;
     color: slategray;
     box-shadow: 2px 2px 2px gray;
-    max-width: 1388.36px;
+    /*max-width: 1388.36px;*/
     margin: 0px;
 }
 
@@ -54,9 +54,9 @@ textarea {
     background-image: url('Image/bigstock-collage-of-sport-photos-with-p-150968885.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
-    height: 91%;
+    height: 637px;
+ 
 }
 
 /*navbar!!*/
@@ -112,9 +112,21 @@ textarea {
 .nav-collapse > li {
     float: right;
 }
+.btn-group {
+    float:right;
+    padding-top:8px;
+    padding-bottom:10px;
+    padding-left:15px;
+    padding-right:15px;
+    background-color:transparent;
+}
+
+.btn-group:hover{
+    background-color:#efefef;
+}
 
 .btn.btn-circle {
-    border-radius: 50px;
+    background-color:transparent;
 }
 
 .btn.btn-outline {
@@ -169,49 +181,27 @@ a {
     color: #aaaaaa;
     font-weight: bold;
     background-image: url('Image/Minimized Logo.png');
-    padding: 15px 0;
-    font-size: 25px;
-    color: #aaaaaa;
-    font-weight: bold;
+    cursor: pointer;
 }
 
 /*used to close target area divs*/
 .arrow {
+    float: right;
     color: white;
     border: 1px solid #AEAEAE;
     border-radius: 30px;
     background-color: #605F61;
-    font-size: 31px;
+    font-size: 25px;
     font-weight: bold;
     display: inline-block;
     line-height: 0px;
-    padding: 11px 3px;
+    padding: 8px 3px;
     text-decoration: none;
 }
 
     .arrow:before {
         content: "x";
     }
-
-.popUpDiv {
-    border: solid;
-    border-color: #ffffff;
-    background-color: #20E278;
-    box-shadow: 5px 5px 5px grey;
-    opacity: .8;
-    margin: 0;
-}
-
-.divGrid {
-    padding-left: 0px;
-    padding-right: 0px;
-    width: 390px;
-    border: thin;
-    border-color: azure;
-    margin: .25px;
-    margin-bottom: 0;
-    cursor: pointer;
-}
 
 #socialLoginList {
     text-align: center;
@@ -360,6 +350,132 @@ span.icon {
     font-size: 35px;
     /*opacity:.7;*/
 }
+
+#textPic {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70%;
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    /*opacity:.7;*/
+}
+
+.popUpDiv {
+    border: solid;
+    border-color: black;
+    background: gray; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, white, gray); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, white, gray); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, white, gray); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, white, gray); /* Standard syntax */
+    opacity: .8;
+    margin: 0;
+}
+
+.divGrid {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 390px;
+    border: thin;
+    border-color: azure;
+    margin: .25px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+#legs {
+    display: none;
+    margin-top: 10px;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+#arms {
+    display: none;
+    margin-top: 10px;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+#abs {
+    display: none;
+    margin-top: 10px;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+#chest {
+    display: none;
+    margin-top: 10px;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+#back {
+    display: none;
+    margin-top: 10px;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+#cardio {
+    display: none;
+    margin-top: 10px;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.bottomRadius {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.topRadius {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.picPad {
+    margin: 20px;
+    margin-left: 0;
+}
+
+    .picPad:hover {
+        opacity: 0.7;
+    }
+
+.topBtnPos {
+    margin-top: 90px;
+    padding-left: 50px;
+}
+
+.bottomBtnPos {
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+.btnColor {
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+    .btnColor:hover {
+        cursor: pointer;
+        background-color: #20e278;
+    }
+
+    .btnColor:focus {
+        outline: 0;
+    }
 
 #armsActivity {
     box-shadow: 1px 1px 1px darkgray;
