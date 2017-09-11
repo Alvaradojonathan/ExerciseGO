@@ -7,20 +7,14 @@ input,
 select,
 textarea {
     max-width: 280px;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 /*maps*/
 #map {
     margin-top: 5%;
-    height: 70%;
-}
-
-/* Optional: Makes the sample page fill the window. */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    height:550px;
 }
 
 /*landing page main picture*/
@@ -152,8 +146,9 @@ html, body {
 html,
 body {
     background: #efefef;
-    padding: 10px;
-    font-family: 'Varela Round';
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
 }
 
 a {
@@ -203,7 +198,7 @@ a {
 
 #Facebook {
     display: inline-block;
-    background: #4267B2;
+    background: #8B9DC3;
     color: #ffffff;
     width: 190px;
     border-radius: 5px;
@@ -215,6 +210,7 @@ a {
 
     #Facebook:hover {
         cursor: pointer;
+        background: #4267B2;
     }
 
 span.label {
@@ -236,9 +232,6 @@ span.buttonText {
     padding-left: 42px;
     padding-right: 42px;
     font-size: 14px;
-    font-weight: bold;
-    /* Use the Roboto font that is loaded in the <head> */
-    font-family: 'Roboto', sans-serif;
 }
 
 #Google {
@@ -254,6 +247,7 @@ span.buttonText {
 
     #Google:hover {
         cursor: pointer;
+        background: #FF0000;
     }
 
 span.label {
@@ -275,9 +269,6 @@ span.buttonText {
     padding-left: 42px;
     padding-right: 42px;
     font-size: 14px;
-    font-weight: bold;
-    /* Use the Roboto font that is loaded in the <head> */
-    font-family: 'Roboto', sans-serif;
 }
 
 #loginPage > div.box {
@@ -297,23 +288,18 @@ div.form-group {
     display: inline-block;
     background: #E2E0E1;
     color: #ffffff;
-    width: 190px;
+    width: 80px;
     border-radius: 5px;
     border: none;
     box-shadow: 1px 1px 1px darkgray;
     white-space: nowrap;
     display: inline-block;
     vertical-align: middle;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 14px;
-    font-weight: bold;
-    /* Use the Roboto font that is loaded in the <head> */
-    font-family: 'Roboto', sans-serif;
 }
 
     #loginButton:hover {
         cursor: pointer;
+        background: #7F7D76;
     }
 
 span.label {
@@ -477,3 +463,34 @@ span.icon {
     .btnColor:focus {
         outline: 0;
     }
+
+#armsActivity {
+    box-shadow: 1px 1px 1px darkgray;
+}
+
+#chestActivity {
+    box-shadow: 1px 1px 1px darkgray;
+}
+
+#absActivity {
+    box-shadow: 1px 1px 1px darkgray;
+}
+
+#backActivity {
+    box-shadow: 1px 1px 1px darkgray;
+}
+
+#legsActivity {
+    box-shadow: 1px 1px 1px darkgray;
+}
+
+#cardioActivity {
+    box-shadow: 1px 1px 1px darkgray;
+}
+
+#post {
+    margin-left: 40px;
+    background-color: #F9F4C2;
+    border: none;
+    box-shadow: 1px 1px 1px #DDDDDD;
+}

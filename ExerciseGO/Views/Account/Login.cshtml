@@ -8,7 +8,7 @@
     <div class="logo"></div>
     <!-- Main Form -->
     <div class="box">
-        <h1 id="heading">ExerciseGO</h1>
+        <h1>Login or <a href="/Account/Register">Register</a></h1>
         <div class="row">
             <hr style="margin-top:0px;"/>
             <div class="col-md-6 col-md-offset-1">
@@ -31,11 +31,11 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-md-3">
-                                <input type="submit" value="Login" class="btn btn-default" id="loginButton"/>
+                            <div class="col-md-6">
+                                <p><a href="#">@Html.ActionLink("Forgot password", "ForgotPassword")</a></p>
                             </div>
                             <div class="etc-login-form">
-                                <p style="text-align:left; padding-top:60px; padding-left:17px;"><a href="#">@Html.ActionLink("Register", "Register")</a> <a style="display:inline-block; padding-left:40px;" href="#">@Html.ActionLink("Forgot password", "ForgotPassword")</a></p>
+                                <input style="margin-left:9px;"type="submit" value="Login" class="btn btn-default" id="loginButton" />
                             </div>
                         </div>
                     }
