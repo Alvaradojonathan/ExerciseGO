@@ -2,14 +2,12 @@
 .dl-horizontal dt {
     white-space: normal;
 }
-
 input,
 select,
 textarea {
     max-width: 280px;
     font-family: 'Roboto', sans-serif;
 }
-
 /*maps*/
 #map {
     margin-top: 5%;
@@ -18,16 +16,6 @@ textarea {
     margin-top: 5%;
     height: 70%;
 }
-
-/* Optional: Makes the sample page fill the window. */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    margin-top: 5%;
-    height: 550px;
-}
-
 /*landing page main picture*/
 .parallax {
     background-image: url('Image/rsz_1backgroundpicture.jpg');
@@ -38,7 +26,6 @@ html, body {
     height: 525px;
     text-align: center;
 }
-
 /*divider bar from main picture and grids*/
 #divider {
     text-align: center;
@@ -50,7 +37,6 @@ html, body {
     box-shadow: 2px 2px 2px gray;
     margin: 0px;
 }
-
 .dividerShadow {
     border: solid;
     border-color: #ffffff;
@@ -59,7 +45,6 @@ html, body {
     margin-top: 0px;
     border-top: 0px;
 }
-
 /*login page*/
 #loginPage {
     background-image: url('Image/bigstock-collage-of-sport-photos-with-p-150968885.jpg');
@@ -67,8 +52,8 @@ html, body {
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
+   
 }
-
 /*navbar!!*/
 .navbar-brand {
     text-align: justify;
@@ -76,22 +61,18 @@ html, body {
     margin-bottom: 0px;
     padding-top: 0px;
 }
-
 .navbar-nav.navbar-right .btn {
     position: relative;
     z-index: 2;
     padding: 4px 20px;
     margin: 10px auto;
 }
-
 .navbar .navbar-collapse {
     position: relative;
 }
-
     .navbar .navbar-collapse .navbar-right > li:last-child {
         padding-left: 22px;
     }
-
 .navbar .nav-collapse {
     position: absolute;
     z-index: 1;
@@ -104,24 +85,19 @@ html, body {
     padding-left: 80px;
     width: 100%;
 }
-
 .navbar.navbar-default .nav-collapse {
     background-color: #f8f8f8;
 }
-
 .navbar.navbar-inverse .nav-collapse {
     background-color: #222;
 }
-
 .navbar .nav-collapse .navbar-form {
     border-width: 0;
     box-shadow: none;
 }
-
 .nav-collapse > li {
     float: right;
 }
-
 .btn-group {
     float: right;
     padding-top: 8px;
@@ -130,61 +106,49 @@ html, body {
     padding-right: 15px;
     background-color: transparent;
 }
-
     .btn-group:hover {
         background-color: #efefef;
     }
-
 .btn.btn-circle {
     background-color: transparent;
 }
-
 .btn.btn-outline {
     background-color: transparent;
 }
-
 @media screen and (max-width: 767px) {
     .navbar .navbar-collapse .navbar-right > li:last-child {
         padding-left: 15px;
         padding-right: 15px;
     }
-
     .navbar .nav-collapse {
         margin: 7.5px auto;
         padding: 0;
     }
-
         .navbar .nav-collapse .navbar-form {
             margin: 0;
         }
-
     .nav-collapse > li {
         float: none;
     }
 }
-
 /*login page*/
 /*=== 1. General Structure ===*/
 html,
 body {
     background: #efefef;
     max-width: 100%;
-    height: 637px;
+    /*height: 637px;*/
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
 }
-
-
 #activityLogBtn {
     color: #aaaaaa;
     transition: all ease-in-out 200ms;
 }
-
     #activityLogBtn:hover {
         color: #8EBB61;
         text-decoration: none;
     }
-
 a {
     color: #aaaaaa;
     transition: all ease-in-out 200ms;
@@ -192,302 +156,8 @@ a {
     a:hover {
         color: #8EBB61;
         text-decoration: none;
-}
-
-/*=== 3. Text Outside the Box ===*/
-.etc-login-form {
-    color: #919191;
-    padding: 10px 20px;
-}
-
-    .etc-login-form p {
-        margin-bottom: 5px;
-}
-
-/*=== 4. Main Form ===*/
-.login-form-1 {
-    max-width: 300px;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-.main-login-form {
-    position: relative;
-}
-
-.login-form-1 .form-control {
-    border: 0;
-    box-shadow: 0 0 0;
-    border-radius: 0;
-    background: transparent;
-    color: #555555;
-    padding: 7px 0;
-    font-weight: bold;
-    height: auto;
-}
-
-.login-form-1 .form-control::-webkit-input-placeholder {
-        color: #999999;
-}
-
-.login-form-1 .form-control:-moz-placeholder,
-.login-form-1 .form-control::-moz-placeholder,
-.login-form-1 .form-control:-ms-input-placeholder {
-        color: #999999;
-}
-
-.login-form-1 .form-group {
-    margin-bottom: 0;
-    border-bottom: 2px solid #efefef;
-    padding-right: 20px;
-    position: relative;
-}
-
-.login-form-1 .form-group:last-child {
-        border-bottom: 0;
-}
-
-.login-group {
-    background: #ffffff;
-    color: #999999;
-    border-radius: 8px;
-    padding: 10px 20px;
-}
-
-.login-group-checkbox {
-    padding: 5px 0;
-}
-
-/*=== 5. Login Button ===*/
-.login-form-1 .login-button {
-    position: absolute;
-    right: -25px;
-    top: 50%;
-    background: #ffffff;
-    color: #999999;
-    padding: 11px 0;
-    width: 50px;
-    height: 50px;
-    margin-top: -25px;
-    border: 5px solid #efefef;
-    border-radius: 50%;
-    transition: all ease-in-out 500ms;
-}
-
-    .login-form-1 .login-button:hover {
-        color: #555555;
-        transform: rotate(450deg);
     }
-
-    .login-form-1 .login-button.clicked {
-        color: #555555;
-    }
-
-        .login-form-1 .login-button.clicked:hover {
-            transform: none;
-        }
-
-        .login-form-1 .login-button.clicked.success {
-            color: #2ecc71;
-        }
-
-        .login-form-1 .login-button.clicked.error {
-            color: #e74c3c;
-        }
-
-/*=== 6. Form Invalid ===*/
-label.form-invalid {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 5;
-    display: block;
-    margin-top: -25px;
-    padding: 7px 9px;
-    background: #777777;
-    color: #ffffff;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 11px;
-}
-
-    label.form-invalid:after {
-        top: 100%;
-        right: 10px;
-        border: solid transparent;
-        content: " ";
-        height: 0;
-        width: 0;
-        position: absolute;
-        pointer-events: none;
-        border-color: transparent;
-        border-top-color: #777777;
-        border-width: 6px;
-    }
-
-/*=== 7. Form - Main Message ===*/
-.login-form-main-message {
-    background: #ffffff;
-    color: #999999;
-    border-left: 3px solid transparent;
-    border-radius: 3px;
-    margin-bottom: 8px;
-    font-weight: bold;
-    height: 0;
-    padding: 0 20px 0 17px;
-    opacity: 0;
-    transition: all ease-in-out 200ms;
-}
-
-    .login-form-main-message.show {
-        height: auto;
-        opacity: 1;
-        padding: 10px 20px 10px 17px;
-    }
-
-    .login-form-main-message.success {
-        border-left-color: #2ecc71;
-    }
-
-    .login-form-main-message.error {
-        border-left-color: #e74c3c;
-    }
-
-/*=== 8. Custom Checkbox & Radio ===*/
-/* Base for label styling */
-[type="checkbox"]:not(:checked),
-[type="checkbox"]:checked,
-[type="radio"]:not(:checked),
-[type="radio"]:checked {
-    position: absolute;
-    left: -9999px;
-}
-
-    [type="checkbox"]:not(:checked) + label,
-    [type="checkbox"]:checked + label,
-    [type="radio"]:not(:checked) + label,
-    [type="radio"]:checked + label {
-        position: relative;
-        padding-left: 25px;
-        padding-top: 1px;
-        cursor: pointer;
-    }
-
-        /* checkbox aspect */
-        [type="checkbox"]:not(:checked) + label:before,
-        [type="checkbox"]:checked + label:before,
-        [type="radio"]:not(:checked) + label:before,
-        [type="radio"]:checked + label:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 2px;
-            width: 17px;
-            height: 17px;
-            border: 0px solid #aaa;
-            background: #f0f0f0;
-            border-radius: 3px;
-            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
-        }
-
-        /* checked mark aspect */
-        [type="checkbox"]:not(:checked) + label:after,
-        [type="checkbox"]:checked + label:after,
-        [type="radio"]:not(:checked) + label:after,
-        [type="radio"]:checked + label:after {
-            position: absolute;
-            color: #555555;
-            transition: all .2s;
-        }
-
-        /* checked mark aspect changes */
-        [type="checkbox"]:not(:checked) + label:after,
-        [type="radio"]:not(:checked) + label:after {
-            opacity: 0;
-            transform: scale(0);
-        }
-
-        [type="checkbox"]:checked + label:after,
-        [type="radio"]:checked + label:after {
-            opacity: 1;
-            transform: scale(1);
-        }
-
-/* disabled checkbox */
-[type="checkbox"]:disabled:not(:checked) + label:before,
-[type="checkbox"]:disabled:checked + label:before,
-[type="radio"]:disabled:not(:checked) + label:before,
-[type="radio"]:disabled:checked + label:before {
-    box-shadow: none;
-    border-color: #8c8c8c;
-    background-color: #878787;
-}
-
-[type="checkbox"]:disabled:checked + label:after,
-[type="radio"]:disabled:checked + label:after {
-    color: #555555;
-}
-
-[type="checkbox"]:disabled + label,
-[type="radio"]:disabled + label {
-    color: #8c8c8c;
-}
-
-/* accessibility */
-[type="checkbox"]:checked:focus + label:before,
-[type="checkbox"]:not(:checked):focus + label:before,
-[type="checkbox"]:checked:focus + label:before,
-[type="checkbox"]:not(:checked):focus + label:before {
-    border: 1px dotted #f6f6f6;
-}
-
-/* hover style just for information */
-label:hover:before {
-    border: 1px solid #f6f6f6 !important;
-}
-
-/*=== Customization ===*/
-/* radio aspect */
-[type="checkbox"]:not(:checked) + label:before,
-[type="checkbox"]:checked + label:before {
-    border-radius: 3px;
-}
-
-[type="radio"]:not(:checked) + label:before,
-[type="radio"]:checked + label:before {
-    border-radius: 35px;
-}
-
-/* selected mark aspect */
-[type="checkbox"]:not(:checked) + label:after,
-[type="checkbox"]:checked + label:after {
-    content: '✔';
-    top: 0;
-    left: 2px;
-    font-size: 14px;
-}
-
-[type="radio"]:not(:checked) + label:after,
-[type="radio"]:checked + label:after {
-    content: '\2022';
-    top: 0;
-    left: 3px;
-    font-size: 30px;
-    line-height: 25px;
-}
-
-a {
-    color: #aaaaaa;
-    transition: all ease-in-out 200ms;
-}
-
-    a:hover {
-        color: #333333;
-        text-decoration: none;
-    }
-
 /*=== 9. Misc ===*/
-
 /*used to close target area divs*/
 .arrow {
     float: right;
@@ -502,18 +172,14 @@ a {
     padding: 8px 3px;
     text-decoration: none;
 }
-
     .arrow:before {
         content: "x";
     }
-
-
 #socialLoginList {
     text-align: center;
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 #Facebook {
     display: inline-block;
     background: #8B9DC3;
@@ -525,17 +191,14 @@ a {
     white-space: nowrap;
     margin-top: 12px;
 }
-
     #Facebook:hover {
         cursor: pointer;
         background: #4267B2;
     }
-
 span.label {
     font-family: serif;
     font-weight: normal;
 }
-
 span.icon {
     background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
     display: inline-block;
@@ -543,7 +206,6 @@ span.icon {
     width: 42px;
     height: 42px;
 }
-
 span.buttonText {
     display: inline-block;
     vertical-align: middle;
@@ -551,7 +213,6 @@ span.buttonText {
     padding-right: 42px;
     font-size: 14px;
 }
-
 #Google {
     display: inline-block;
     background: #EA4335;
@@ -562,17 +223,14 @@ span.buttonText {
     box-shadow: 1px 1px 1px grey;
     white-space: nowrap;
 }
-
     #Google:hover {
         cursor: pointer;
         background: #FF0000;
     }
-
 span.label {
     font-family: serif;
     font-weight: normal;
 }
-
 span.icon {
     background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
     display: inline-block;
@@ -580,7 +238,6 @@ span.icon {
     width: 42px;
     height: 42px;
 }
-
 span.buttonText {
     display: inline-block;
     vertical-align: middle;
@@ -588,20 +245,22 @@ span.buttonText {
     padding-right: 42px;
     font-size: 14px;
 }
-
 #loginPage > div.box {
     width: 615px;
     height: 300px;
     margin: auto;
-    margin-top: 10%;
+    /*margin-top: 10%;*/
     background: rgb(255, 255, 255);
     border-radius: 10px;
 }
-
+.text1 {
+    padding-top: 30px;
+    color: #8B9DC3;
+    font-size: 20px;
+}
 div.form-group {
     text-align: left;
 }
-
 #loginButton {
     display: inline-block;
     background: #99C968;
@@ -614,17 +273,14 @@ div.form-group {
     display: inline-block;
     vertical-align: middle;
 }
-
     #loginButton:hover {
         cursor: pointer;
         background: #3A7A22;
     }
-
 span.label {
     font-family: serif;
     font-weight: normal;
 }
-
 span.icon {
     background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
     display: inline-block;
@@ -632,19 +288,15 @@ span.icon {
     width: 42px;
     height: 42px;
 }
-
 #loginButton:hover {
     cursor: pointer;
 }
-
 .etc-login-form {
     margin-left: 1px;
 }
-
 #heading {
     padding: 10px;
 }
-
 #text {
     position: absolute;
     /*left: 50px;*/
@@ -655,7 +307,6 @@ span.icon {
     font-size: 27px;
     /*opacity:.7;*/
 }
-
 #textPic {
     position: absolute;
     right: 0;
@@ -666,7 +317,6 @@ span.icon {
     font-size: 20px;
     /*opacity:.7;*/
 }
-
 /*Home page divs hidden shown*/
 .popUpDiv {
     border: solid 0.5px;
@@ -677,11 +327,10 @@ span.icon {
     margin: 0;
     margin-bottom: 10px;
 }
-
 .divGrid {
     padding-left: 0px;
     padding-right: 0px;
-    width: 390px;
+    width: 224px;
     border: thin;
     border-color: azure;
     margin: .25px;
@@ -689,118 +338,96 @@ span.icon {
     cursor: pointer;
     width: 224px;
 }
-
 #legs {
     display: none;
     margin-top: 10px;
     padding: 0;
 }
-
 #arms {
     display: none;
     margin-top: 10px;
     padding: 0;
 }
-
 #abs {
     display: none;
     margin-top: 10px;
     padding: 0;
 }
-
 #chest {
     display: none;
     margin-top: 10px;
     padding: 0;
 }
-
 #back {
     display: none;
     margin-top: 10px;
     padding: 0;
 }
-
 #cardio {
     display: none;
     margin-top: 10px;
     padding: 0;
 }
-
 .picPad {
     margin: 20px;
     margin-left: 0;
     max-height: 228.61px;
 }
-
     .picPad:hover {
         opacity: 0.7;
     }
-
 .picBorder {
     border: solid 0.5px;
     border-color: black;
 }
-
 .picOpacity:hover {
     opacity: 0.8;
 }
-
 .topBtnPos {
     margin-top: 90px;
     padding-left: 50px;
 }
-
 .bottomBtnPos {
     margin-top: 20px;
     padding-left: 50px;
 }
-
 .btnColor {
     background-color: white;
     border-radius: 15px;
     padding: 5px;
 }
-
     .btnColor:hover {
         cursor: pointer;
         background-color: #20e278;
     }
-
     .btnColor:focus {
         outline: 0;
     }
-
 /*Activity log page hide show*/
 #armsActivity {
     display: none;
     box-shadow: 1px 1px 1px darkgray;
 }
-
 #chestActivity {
     display: none;
     box-shadow: 1px 1px 1px darkgray;
 }
-
 #absActivity {
     display: none;
     box-shadow: 1px 1px 1px darkgray;
 }
-
 #backActivity {
     display: none;
     box-shadow: 1px 1px 1px darkgray;
 }
-
 #legsActivity {
     display: none;
     box-shadow: 1px 1px 1px darkgray;
 }
-
 #cardioActivity {
     display: none;
     box-shadow: 1px 1px 1px darkgray;
 }
-
 #post {
     margin-left: 40px;
     background-color: #F9F4C2;
@@ -808,3 +435,7 @@ span.icon {
     box-shadow: 1px 1px 1px #DDDDDD;
 }
 /*UPPERCASE ids of Arms, Legs, etc. is for the Activity log page....lowercase for home page*/
+Add Comment Collapse
+
+
+
