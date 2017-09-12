@@ -335,6 +335,7 @@
     <Content Include="Content\Image\Step Machine.png" />
     <Content Include="Content\Image\Treadmill.png" />
     <Content Include="Content\Image\tricepScreenshot.jpg" />
+    <Content Include="Content\Image\VideoBackgroundTwo.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
