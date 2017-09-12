@@ -361,7 +361,7 @@ span.icon {
     font-size: 35px;
     /*opacity:.7;*/
 }
-
+/*Home page divs hidden shown*/
 .popUpDiv {
     border: solid 0.5px;
     border-color: black;
@@ -440,7 +440,9 @@ span.icon {
     border: solid 0.5px;
     border-color: black;
 }
-
+.picOpacity:hover {
+    opacity: 0.8;
+}
 .topBtnPos {
     margin-top: 90px;
     padding-left: 50px;
@@ -466,27 +468,34 @@ span.icon {
         outline: 0;
     }
 
+/*Activity log page hide show*/
 #armsActivity {
+    display: none;
     box-shadow: 1px 1px 1px darkgray;
 }
 
 #chestActivity {
+    display: none;
     box-shadow: 1px 1px 1px darkgray;
 }
 
 #absActivity {
+    display: none;
     box-shadow: 1px 1px 1px darkgray;
 }
 
 #backActivity {
+    display: none;
     box-shadow: 1px 1px 1px darkgray;
 }
 
 #legsActivity {
+    display: none;
     box-shadow: 1px 1px 1px darkgray;
 }
 
 #cardioActivity {
+    display: none;
     box-shadow: 1px 1px 1px darkgray;
 }
 
@@ -496,3 +505,4 @@ span.icon {
     border: none;
     box-shadow: 1px 1px 1px #DDDDDD;
 }
+/*UPPERCASE ids of Arms, Legs, etc. is for the Activity log page....lowercase for home page*/
