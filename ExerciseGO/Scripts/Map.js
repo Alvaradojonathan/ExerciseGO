@@ -250,6 +250,7 @@ $(document).ready(function () {
         });
     });
 });
+
 //UPPERCASE ids of Arms, Legs, etc. is for the Activity log page....lowercase for home page
 function openArmsDiv() {
 
@@ -314,3 +315,15 @@ function openFilterDiv() {
         x.style.display = 'block';
     }
 }
+
+//Activity Log filtering
+$(document).ready(function () {
+    $('.results > li').hi();
+
+    $('div.tags').find('input:checkbox').live('click', function () {
+        $('.results > li').hide();
+        $('div.tags').find('input:checked').each(function () {
+            $('.results > li.' + $(this).attr('rel')).show();
+        });
+    });
+});
