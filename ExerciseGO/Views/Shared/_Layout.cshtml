@@ -28,7 +28,6 @@
                     <li>@Html.Partial("_LoginPartial")</li>
                 </ul>
 
-                
                 <div class="btn-group">
                     <button class="btn btn-secondary dropdown-toggle btn-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Activity Log
@@ -38,7 +37,7 @@
                         <li><a href="~/ActivityLogs/Index#backActivity">Back</a></li>
                         <li><a href="~/ActivityLogs/Index#chestActivity">Chest</a></li>
                         <li><a href="~/ActivityLogs/Index#absActivity">Abs</a></li>
-                        <li><a href="#Leg~/ActivityLogs/Index#legsActivitys">Legs</a></li>
+                        <li><a href="~/ActivityLogs/Index#legsActivitys">Legs</a></li>
                         <li><a href="~/ActivityLogs/Index#armsActivity">Arms</a></li>
                     </ul>
                 </div>
@@ -48,6 +47,9 @@
 
     @RenderBody()
 
+    <footer>
+        <p>&copy; @DateTime.Now.Year - ExerciseGo Web Application</p>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
