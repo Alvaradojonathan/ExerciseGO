@@ -19,7 +19,7 @@ namespace ExerciseGO.Controllers
         public ActionResult Index()
         {
             var user = User.Identity.GetUserId();
-            var activityLogs = db.ActivityLogs.Include(a => a.AspNetUser).Include(a => a.TargetArea);            
+            var activityLogs = db.ActivityLogs.Include(a => a.AspNetUser).Include(a => a.TargetArea);
             var query = (from e in activityLogs
                          where e.AspNetUserID == user
                          select e);
