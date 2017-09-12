@@ -241,7 +241,7 @@ function closeWindowFive() {
 
 //Activity Log filtering
 $(document).ready(function () {
-    $('.results > li').hi();
+    $('.results > li').hide();
 
     $('div.tags').find('input:checkbox').live('click', function () {
         $('.results > li').hide();
