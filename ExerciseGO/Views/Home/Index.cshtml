@@ -7,31 +7,32 @@
 </div>
 
 <div class="container-fluid" id="divContainer" style="margin-top:10px; ">
+
     <div class="row" style="margin-top:.5px;">
         <div class="col-md-2 col-sm-12 divGrid" onclick="openWindow();" style="width:224px;">
-            <img class="img-responsive" src="~/Content/Image/rsz_legs2.jpg" style="width:224px; margin-left:1px;"/>
+            <img class="img-responsive picOpacity" src="~/Content/Image/rsz_legs2.jpg" style="width:224px; margin-left:1px;"/>
             <h1 id="text" style="font-family: 'Raleway', sans-serif; font-weight:bold;">LEGS</h1>
         </div>
         <div class="col-md-2 col-sm-12 divGrid" onclick="openWindowOne();" style="width:224px;">
-            <img class="img-responsive" src="~/Content/Image/rsz_1arms.jpg" style="width:224px; margin-left:1px;" />
+            <img class="img-responsive picOpacity" src="~/Content/Image/rsz_1arms.jpg" style="width:224px; margin-left:1px;" />
             <h1 id="text" style="font-family: 'Raleway', sans-serif; font-weight:bold;">ARMS</h1>
         </div>
         <div class="col-md-2 col-sm-12 divGrid" onclick="openWindowTwo();" style="width:224px;">
-            <img class="img-responsive" src="~/Content/Image/rsz_back.jpg" style="width:224px; margin-left:2px;" />
+            <img class="img-responsive picOpacity" src="~/Content/Image/rsz_back.jpg" style="width:224px; margin-left:2px;" />
             <h1 id="text" style="font-family: 'Raleway', sans-serif; font-weight:bold;">BACK</h1>
         </div>
     
     @*<div class="row" style="margin-top:.5px;">*@
         <div class="col-md-2 col-sm-12 divGrid" onclick="openWindowThree();" style="width:224px;">
-            <img class="img-responsive" src="~/Content/Image/rsz_chest.jpg" style="width:224px; margin-left:2px;"/>
+            <img class="img-responsive picOpacity" src="~/Content/Image/rsz_chest.jpg" style="width:224px; margin-left:2px;"/>
             <h1 id="text" style="font-family: 'Raleway', sans-serif; font-weight:bold;">CHEST</h1>
         </div>
         <div class="col-md-2 col-sm-12 divGrid" onclick="openWindowFour();" style="width:224px;">
-            <img class="img-responsive" src="~/Content/Image/rsz_abs.jpg" style="width:224px; margin-left:3px;" />
+            <img class="img-responsive picOpacity" src="~/Content/Image/rsz_abs.jpg" style="width:224px; margin-left:3px;" />
             <h1 id="text" style="font-family: 'Raleway', sans-serif; font-weight:bold;">ABS</h1>
         </div>
         <div class="col-md-2 col-sm-12 divGrid" onclick="openWindowFive();" style="width:224px;">
-            <img class="img-responsive" src="~/Content/Image/rsz_cardio.jpg" style="width:224px; margin-left:3px;" />
+            <img class="img-responsive picOpacity" src="~/Content/Image/rsz_cardio.jpg" style="width:224px; margin-left:3px;" />
             <h1 id="text" style="font-family: 'Raleway', sans-serif; font-weight:bold;">CARDIO</h1>
         </div>
     </div>
@@ -39,12 +40,12 @@
 
 @*legs div*@
 <div class="container" id="legs">
-    <div class="row popUpDiv topRadius">
+    <div class="row popUpDiv ">
         <div class="col-md-7">
             <div class="row">
-                <div class="col-md-5" style="font-family: 'Raleway', sans-serif;">
-                    <div class="row topBtnPos"><button class="btnColor">Record Activity</button></div>
-                    <div class="row bottomBtnPos"><button class="btnColor">Legs Activity History</button></div>
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#legsActivity">Legs Activity History</a></div>
                 </div>
                 <div class="col-md-7">
                     <div class="row" style="margin-top: 100px; text-align:left;font-family: 'Raleway', sans-serif; ">
@@ -55,15 +56,15 @@
         </div>
         <div class="col-md-5">
             <a href="#" class="arrow" style="float:right;" onclick="closeWindow();"></a>
-            <a href="~/Videos/Details/4"><img class="img-responsive picPad" src="~/Content/Image/M Squats.png" /></a>
+            <a href="~/Videos/Details/4" ><img class="img-responsive picPad picBorder" src="~/Content/Image/M Squats.png" /></a>
         </div>
     </div>
     <div class="row popUpDiv">
         <div class="col-md-7">
             <div class="row">
-                <div class="col-md-5" style="font-family: 'Raleway', sans-serif;">
-                    <div class="row topBtnPos"><button class="btnColor">Record Activity</button></div>
-                    <div class="row bottomBtnPos"><button class="btnColor">Legs Activity History</button></div>
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#legsActivity">Legs Activity History</a></div>
                 </div>
                 <div class="col-md-7">
                     <div class="row" style="margin-top: 100px; text-align:left; font-family: 'Raleway', sans-serif;">
@@ -73,18 +74,90 @@
             </div>
         </div>
         <div class="col-md-5">
-            <a href="~/Videos/Details/3"><img class="img-responsive picPad" src="~/Content/Image/F Squats.png" /></a>
+            <a href="~/Videos/Details/3"><img class="img-responsive picPad picBorder" src="~/Content/Image/F Squats.png" /></a>
+        </div>
+    </div>
+    <div class="row popUpDiv">
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#legsActivity">Legs Activity History</a></div>
+                </div>
+                <div class="col-md-7">
+                    <div class="row" style="margin-top: 100px; text-align:left;">
+                        <h4>This video shows how to use a weighted barbell to perform back squats, and the reverse lunge.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <a href="~/Videos/Details/3"><img class="img-responsive picPad picBorder" src="~/Content/Image/F Squats.png" /></a>
+        </div>
+    </div>
+    <div class="row popUpDiv">
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#legsActivity">Legs Activity History</a></div>
+                </div>
+                <div class="col-md-7">
+                    <div class="row" style="margin-top: 100px; text-align:left;">
+                        <h4>This video shows how to use a weighted barbell to perform back squats, and the reverse lunge.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <a href="~/Videos/Details/3"><img class="img-responsive picPad picBorder" src="~/Content/Image/F Squats.png" /></a>
+        </div>
+    </div>
+    <div class="row popUpDiv">
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#legsActivity">Legs Activity History</a></div>
+                </div>
+                <div class="col-md-7">
+                    <div class="row" style="margin-top: 100px; text-align:left;">
+                        <h4>This video shows how to use a weighted barbell to perform back squats, and the reverse lunge.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <a href="~/Videos/Details/3"><img class="img-responsive picPad picBorder" src="~/Content/Image/F Squats.png" /></a>
+        </div>
+    </div>
+    <div class="row popUpDiv">
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#legsActivity">Legs Activity History</a></div>
+                </div>
+                <div class="col-md-7">
+                    <div class="row" style="margin-top: 100px; text-align:left;">
+                        <h4>This video shows how to use a weighted barbell to perform back squats, and the reverse lunge.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <a href="~/Videos/Details/3"><img class="img-responsive picPad picBorder" src="~/Content/Image/F Squats.png" /></a>
         </div>
     </div>
 </div>
 @*arms div*@
 <div class="container" id="arms" style="display:none; margin-top: 10px;">
-    <div class="row popUpDiv topRadius">
+    <div class="row popUpDiv ">
         <div class="col-md-7">
             <div class="row">
-                <div class="col-md-5" style="font-family: 'Raleway', sans-serif;">
-                    <div class="row topBtnPos"><button class="btnColor">Record Activity</button></div>
-                    <div class="row bottomBtnPos"><button class="btnColor">Arms Activity History</button></div>
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#armsActivity">Arms Activity History</a></div>
                 </div>
                 <div class="col-md-7">
                     <div class="row" style="margin-top: 100px; text-align:left; font-family: 'Raleway', sans-serif;">
@@ -95,15 +168,15 @@
         </div>
         <div class="col-md-5">
             <a href="#" class="arrow" style="float:right;" onclick="closeWindowOne();"></a>
-            <a href="~/Videos/Details/12"><img class="img-responsive picPad" src="~/Content/Image/menBicepScreenshot.jpg" /></a>
+            <a href="~/Videos/Details/12"><img class="img-responsive picPad picBorder" src="~/Content/Image/menBicepScreenshot.jpg" /></a>
         </div>
     </div>
     <div class="row popUpDiv">
         <div class="col-md-7">
             <div class="row">
-                <div class="col-md-5" style="font-family: 'Raleway', sans-serif;">
-                    <div class="row topBtnPos"><button class="btnColor">Record Activity</button></div>
-                    <div class="row bottomBtnPos"><button class="btnColor">Arms Activity History</button></div>
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#armsActivity">Arms Activity History</a></div>
                 </div>
                 <div class="col-md-7">
                     <div class="row" style="margin-top: 100px; text-align:left; font-family: 'Raleway', sans-serif;">
@@ -113,18 +186,55 @@
             </div>
         </div>
         <div class="col-md-5">
-            <a href="~/Videos/Details/21"><img class="img-responsive picPad" src="~/Content/Image/bicepScreenshot.jpg" /></a>
+            <a href="~/Videos/Details/21"><img class="img-responsive picPad picBorder" src="~/Content/Image/bicepScreenshot.jpg" /></a>
         </div>
     </div>
-    </div>
-@*back div*@
-<div class="container" id="back" style="display:none; margin-top: 10px;">
-    <div class="row popUpDiv topRadius">
+    <div class="row popUpDiv">
         <div class="col-md-7">
             <div class="row">
-                <div class="col-md-5" style="font-family: 'Raleway', sans-serif;">
-                    <div class="row topBtnPos"><button class="btnColor">Record Activity</button></div>
-                    <div class="row bottomBtnPos"><button class="btnColor">Back Activity History</button></div>
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#armsActivity">Arms Activity History</a></div>
+                </div>
+                <div class="col-md-7">
+                    <div class="row" style="margin-top: 100px; text-align:left;">
+                        <h4>Exercise shown: perfect bicep curl.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <a href="~/Videos/Details/21"><img class="img-responsive picPad picBorder" src="~/Content/Image/bicepScreenshot.jpg" /></a>
+        </div>
+    </div>
+    <div class="row popUpDiv ">
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#armsActivity">Arms Activity History</a></div>
+                </div>
+                <div class="col-md-7">
+                    <div class="row" style="margin-top: 100px; text-align:left;">
+                        <h4>Exercise shown: perfect bicep curl.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <a href="~/Videos/Details/21"><img class="img-responsive picPad picBorder" src="~/Content/Image/bicepScreenshot.jpg" /></a>
+        </div>
+    </div>
+</div>
+
+@*back div*@
+<div class="container" id="back" style="display:none; margin-top: 10px;">
+    <div class="row popUpDiv ">
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#backActivity">Back Activity History</a></div>
                 </div>
                 <div class="col-md-7">
                     <div class="row" style="margin-top: 100px; text-align:left; font-family: 'Raleway', sans-serif;">
@@ -135,15 +245,15 @@
         </div>
         <div class="col-md-5">
             <a href="#" class="arrow" style="float:right;" onclick="closeWindowTwo();"></a>
-            <a href="~/Videos/Details/18"><img class="img-responsive picPad" src="~/Content/Image/mensBackScreenshot.jpg" /></a>
+            <a href="~/Videos/Details/18"><img class="img-responsive picPad picBorder" src="~/Content/Image/mensBackScreenshot.jpg" /></a>
         </div>
     </div>
     <div class="row popUpDiv">
         <div class="col-md-7">
             <div class="row">
-                <div class="col-md-5" style="font-family: 'Raleway', sans-serif;">
-                    <div class="row topBtnPos"><button class="btnColor">Record Activity</button></div>
-                    <div class="row bottomBtnPos"><button class="btnColor">Back Activity History</button></div>
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#backActivity">Back Activity History</a></div>
                 </div>
                 <div class="col-md-7">
                     <div class="row" style="margin-top: 100px; text-align:left; font-family: 'Raleway', sans-serif;">
@@ -153,18 +263,54 @@
             </div>
         </div>
         <div class="col-md-5">
-            <a href="~/Videos/Details/25"><img class="img-responsive picPad" src="~/Content/Image/backScreenshot.jpg" /></a>
+            <a href="~/Videos/Details/25"><img class="img-responsive picPad picBorder" src="~/Content/Image/backScreenshot.jpg" /></a>
         </div>
+    </div>
+    <div class="row popUpDiv">
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#backActivity">Back Activity History</a></div>
+                </div>
+                <div class="col-md-7">
+                    <div class="row" style="margin-top: 100px; text-align:left;">
+                        <h4>Exercises shown: bent-over-row, bent-over-wide-row, single arm front lat cable pull, and the side lat cable pull down.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <a href="~/Videos/Details/25"><img class="img-responsive picPad picBorder" src="~/Content/Image/backScreenshot.jpg" /></a>
+        </div>
+    </div>
+    <div class="row popUpDiv ">
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#backActivity">Back Activity History</a></div>
+                </div>
+                <div class="col-md-7">
+                    <div class="row" style="margin-top: 100px; text-align:left;">
+                        <h4>Exercises shown: bent-over-row, bent-over-wide-row, single arm front lat cable pull, and the side lat cable pull down.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <a href="~/Videos/Details/25"><img class="img-responsive picPad picBorder" src="~/Content/Image/backScreenshot.jpg" /></a>
     </div>
 </div>
 @*chest div*@
 <div class="container" id="chest" style="display:none; margin-top: 10px;">
-    <div class="row popUpDiv topRadius">
+    <div class="row popUpDiv ">
         <div class="col-md-7">
             <div class="row">
-                <div class="col-md-5" style="font-family: 'Raleway', sans-serif;">
-                    <div class="row topBtnPos"><button class="btnColor">Record Activity</button></div>
-                    <div class="row bottomBtnPos"><button class="btnColor">Chest Activity History</button></div>
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#chestActivity">Chest Activity History</a></div>
                 </div>
                 <div class="col-md-7">
                     <div class="row" style="margin-top: 100px; text-align:left; font-family: 'Raleway', sans-serif;">
@@ -175,15 +321,15 @@
         </div>
         <div class="col-md-5">
             <a href="#" class="arrow" style="float:right;" onclick="closeWindowThree();"></a>
-            <a href="~/Videos/Details/16"><img class="img-responsive picPad" src="~/Content/Image/M Chest.png" /></a>
+            <a href="~/Videos/Details/16"><img class="img-responsive picPad picBorder" src="~/Content/Image/M Chest.png" /></a>
         </div>
     </div>
     <div class="row popUpDiv bottomRadius">
         <div class="col-md-7">
             <div class="row">
-                <div class="col-md-5" style="font-family: 'Raleway', sans-serif;">
-                    <div class="row topBtnPos"><button class="btnColor">Record Activity</button></div>
-                    <div class="row bottomBtnPos"><button class="btnColor">Chest Activity History</button></div>
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#backActivity">Back Activity History</a></div>
                 </div>
                 <div class="col-md-7">
                     <div class="row" style="margin-top: 100px; text-align:left; font-family: 'Raleway', sans-serif;">
@@ -193,19 +339,19 @@
             </div>
         </div>
         <div class="col-md-5">
-            <a href="~/Videos/Details/24"><img class="img-responsive picPad" src="~/Content/Image/chestScreenshot.jpg" /></a>
+            <a href="~/Videos/Details/24"><img class="img-responsive picPad picBorder" src="~/Content/Image/chestScreenshot.jpg" /></a>
         </div>
     </div>
 </div>
 
 @*abs div*@
 <div class="container" id="abs" style="display:none; margin-top: 10px;">
-    <div class="row popUpDiv topRadius">
+    <div class="row popUpDiv ">
         <div class="col-md-7">
             <div class="row">
-                <div class="col-md-5" style="font-family: 'Raleway', sans-serif;">
-                    <div class="row topBtnPos"><button class="btnColor">Record Activity</button></div>
-                    <div class="row bottomBtnPos"><button class="btnColor">Abs Activity History</button></div>
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#absActivity">Abs Activity History</a></div>
                 </div>
                 <div class="col-md-7">
                     <div class="row" style="margin-top: 100px; text-align:left; font-family: 'Raleway', sans-serif;">
@@ -216,15 +362,15 @@
         </div>
         <div class="col-md-5">
             <a href="#" class="arrow" style="float:right;" onclick="closeWindowFour();"></a>
-            <a href="~/Videos/Details/15"><img class="img-responsive picPad" src="~/Content/Image/M Abs.png" /></a>
+            <a href="~/Videos/Details/15"><img class="img-responsive picPad picBorder" src="~/Content/Image/M Abs.png" /></a>
         </div>
     </div>
     <div class="row popUpDiv">
         <div class="col-md-7">
             <div class="row">
-                <div class="col-md-5" style="font-family: 'Raleway', sans-serif;">
-                    <div class="row topBtnPos"><button class="btnColor">Record Activity</button></div>
-                    <div class="row bottomBtnPos"><button class="btnColor">Abs Activity History</button></div>
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#absActivity">Abs Activity History</a></div>
                 </div>
                 <div class="col-md-7">
                     <div class="row" style="margin-top: 100px; text-align:left; font-family: 'Raleway', sans-serif;">
@@ -234,19 +380,55 @@
             </div>
         </div>
         <div class="col-md-5">
-            <a href="~/Videos/Details/19"><img class="img-responsive picPad" src="~/Content/Image/abScreenshot.jpg" /></a>
+            <a href="~/Videos/Details/19"><img class="img-responsive picPad picBorder" src="~/Content/Image/abScreenshot.jpg" /></a>
+        </div>
+    </div>
+    <div class="row popUpDiv">
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#absActivity">Abs Activity History</a></div>
+                </div>
+                <div class="col-md-7">
+                    <div class="row" style="margin-top: 100px; text-align:left;">
+                        <h4>Exercises shown: inclined dumbell press, the typical bench press, inclined bench press, and machine assisted cable-fly.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <a href="~/Videos/Details/24"><img class="img-responsive picPad picBorder" src="~/Content/Image/chestScreenshot.jpg" /></a>
+        </div>
+    </div>
+    <div class="row popUpDiv ">
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#absActivity">Abs Activity History</a></div>
+                </div>
+                <div class="col-md-7">
+                    <div class="row" style="margin-top: 100px; text-align:left;">
+                        <h4>Exercises shown: inclined dumbell press, the typical bench press, inclined bench press, and machine assisted cable-fly.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <a href="~/Videos/Details/24"><img class="img-responsive picPad picBorder" src="~/Content/Image/chestScreenshot.jpg" /></a>
         </div>
     </div>
 </div>
 
 @*Cardio div*@
 <div class="container" id="cardio" style="display:none; margin-top: 10px;">
-    <div class="row popUpDiv topRadius">
+    <div class="row popUpDiv ">
         <div class="col-md-7">
             <div class="row">
-                <div class="col-md-5" style="font-family: 'Raleway', sans-serif;">
-                    <div class="row topBtnPos"><button class="btnColor">Record Activity</button></div>
-                    <div class="row bottomBtnPos"><button class="btnColor" href="~/ActivityLog/Index.html#cardioActivity">Cardio Activity History</button></div>
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#cardioActivity">Cardio Activity History</a></div>
                 </div>
                 <div class="col-md-7">
                     <div class="row" style="margin-top: 100px; text-align:left; font-family: 'Raleway', sans-serif;">
@@ -257,15 +439,15 @@
         </div>
         <div class="col-md-5">
             <a href="#" class="arrow" style="float:right;" onclick="closeWindowFive();"></a>
-            <a href="~/Videos/Details/9"><img class="img-responsive picPad" src="~/Content/Image/F Glutes.png" /></a>
+            <a href="~/Videos/Details/9"><img class="img-responsive picPad picBorder" src="~/Content/Image/F Glutes.png" /></a>
         </div>
     </div>
     <div class="row popUpDiv">
         <div class="col-md-7">
             <div class="row">
-                <div class="col-md-5" style="font-family: 'Raleway', sans-serif;">
-                    <div class="row topBtnPos"><button class="btnColor">Record Activity</button></div>
-                    <div class="row bottomBtnPos"><button class="btnColor">Cardio Activity History</button></div>
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#cardioActivity">Cardio Activity History</a></div>
                 </div>
                 <div class="col-md-7">
                     <div class="row" style="margin-top: 100px; text-align:left; font-family: 'Raleway', sans-serif;">
@@ -275,15 +457,15 @@
             </div>
         </div>
         <div class="col-md-5">
-            <a href="~/Videos/Details/10"><img class="img-responsive picPad" src="~/Content/Image/M Glutes.png" /></a>
+            <a href="~/Videos/Details/10"><img class="img-responsive picPad picBorder" src="~/Content/Image/M Glutes.png" /></a>
         </div>
     </div>
-    <div class="row popUpDiv bottomRadius">
+    <div class="row popUpDiv">
         <div class="col-md-7">
             <div class="row">
-                <div class="col-md-5" style="font-family:'Raleway', sans-serif;">
-                    <div class="row topBtnPos"><button class="btnColor">Record Activity</button></div>
-                    <div class="row bottomBtnPos"><button class="btnColor">Cardio Activity History</button></div>
+                <div class="col-md-5">
+                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#cardioActivity">Cardio Activity History</a></div>
                 </div>
                 <div class="col-md-7">
                     <div class="row" style="margin-top: 100px; text-align:left; font-family:'Raleway', sans-serif;">
@@ -293,7 +475,7 @@
             </div>
         </div>
         <div class="col-md-5" sstyle="font-family:'Raleway', sans-serif;">
-            <a href="~/Videos/Details/10"><img class="img-responsive picPad" src="~/Content/Image/M Hamstring.png" /></a>
+            <a href="~/Videos/Details/10"><img class="img-responsive picPad picBorder" src="~/Content/Image/M Hamstring.png" /></a>
         </div>
     </div>
 </div>
