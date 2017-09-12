@@ -238,3 +238,67 @@ function closeWindowFive() {
         x.style.display = 'block';
     }
 }
+//UPPERCASE ids of Arms, Legs, etc. is for the Activity log page....lowercase for home page
+function openArmsDiv() {
+
+    var x = document.getElementById('armsActivity');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+function openLegsDiv() {
+
+    var x = document.getElementById('legsActivity');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+function openChestDiv() {
+
+    var x = document.getElementById('chestActivity');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+function openBackDiv() {
+
+    var x = document.getElementById('backActivity');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+function openAbsDiv() {
+
+    var x = document.getElementById('absActivity');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+function openCardioDiv() {
+
+    var x = document.getElementById('cardioActivity');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+function openFilterDiv() {
+
+    var x = document.getElementById('filter');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
