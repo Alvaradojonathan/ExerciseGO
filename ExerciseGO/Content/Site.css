@@ -24,7 +24,7 @@ textarea {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    height: 550px;
+    height: 525px;
     text-align: center;
 }
 
@@ -55,8 +55,7 @@ textarea {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 637px;
- 
+    height: 100%;
 }
 
 /*navbar!!*/
@@ -112,21 +111,22 @@ textarea {
 .nav-collapse > li {
     float: right;
 }
+
 .btn-group {
-    float:right;
-    padding-top:8px;
-    padding-bottom:10px;
-    padding-left:15px;
-    padding-right:15px;
-    background-color:transparent;
+    float: right;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: transparent;
 }
 
-.btn-group:hover{
-    background-color:#efefef;
-}
+    .btn-group:hover {
+        background-color: #efefef;
+    }
 
 .btn.btn-circle {
-    background-color:transparent;
+    background-color: transparent;
 }
 
 .btn.btn-outline {
@@ -164,13 +164,23 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+#activityLogBtn {
+    color: #aaaaaa;
+    transition: all ease-in-out 200ms;
+}
+
+    #activityLogBtn:hover {
+        color: #8EBB61;
+        text-decoration: none;
+    }
+
 a {
     color: #aaaaaa;
     transition: all ease-in-out 200ms;
 }
 
     a:hover {
-        color: #333333;
+        color: #8EBB61;
         text-decoration: none;
     }
 
@@ -299,7 +309,7 @@ div.form-group {
 
 #loginButton {
     display: inline-block;
-    background: #E2E0E1;
+    background: #99C968;
     color: #ffffff;
     width: 80px;
     border-radius: 5px;
@@ -312,7 +322,7 @@ div.form-group {
 
     #loginButton:hover {
         cursor: pointer;
-        background: #7F7D76;
+        background: #3A7A22;
     }
 
 span.label {
@@ -429,7 +439,6 @@ span.icon {
     margin: 20px;
     margin-left: 0;
     max-height: 228.61px;
-    
 }
 
     .picPad:hover {
@@ -440,9 +449,11 @@ span.icon {
     border: solid 0.5px;
     border-color: black;
 }
+
 .picOpacity:hover {
     opacity: 0.8;
 }
+
 .topBtnPos {
     margin-top: 90px;
     padding-left: 50px;
