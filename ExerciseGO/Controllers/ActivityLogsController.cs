@@ -18,14 +18,12 @@ namespace ExerciseGO.Controllers
         [Authorize]
         public ActionResult Index()
         {
-            //var user = User.Identity.GetUserId();
+            var user = User.Identity.GetUserId();
             var activityLogs = db.ActivityLogs.Include(a => a.AspNetUser).Include(a => a.TargetArea);
-            //var exclusionKeys = exclusions.Select(x => x.compositeKey);
-            //var resultingPersons = persons.Where(x => !exclusionKeys.Contains(x.compositeKey));
-            //var query = (from e in db.ActivityLogs
-            //             where e.AspNetUserID == user
-            //             select e.ActivityLogID);
-            return View(activityLogs.ToList());
+            var query = (from e in activityLogs
+                         where e.AspNetUserID == user
+                         select e);
+            return View(query.ToList());
         }
 
         // GET: ActivityLogs/Details/5
