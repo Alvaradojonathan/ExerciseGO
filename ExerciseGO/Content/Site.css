@@ -33,9 +33,9 @@ textarea {
 /*divider bar from main picture and grids*/
 #divider {
     text-align: center;
-    background-color: #fff;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    background-color: ghostwhite;
+    padding-top: 7px;
+    padding-bottom: 7px;
     font-family: 'Montserrat', sans-serif;
     color: slategray;
     box-shadow: 2px 2px 2px gray;
@@ -44,7 +44,7 @@ textarea {
 
 .dividerShadow {
     border: solid;
-    border-color: #ffffff;
+    border-color: ghostwhite;
     background-color: lightgray;
     box-shadow: 0 2px 0 2px #323F48;
     margin-top: 0px;
@@ -383,7 +383,7 @@ span.icon {
 .popUpDiv {
     border: solid 0.5px;
     border-color: black;
-    background-color: white;
+    background-color: ghostwhite;
     box-shadow: 2px 2px 2px darkgray;
     opacity: .8;
     margin: 0;
@@ -519,4 +519,10 @@ span.icon {
     border: none;
     box-shadow: 1px 1px 1px #DDDDDD;
 }
-/*UPPERCASE ids of Arms, Legs, etc. is for the Activity log page....lowercase for home page*/
+.h1Text {
+    font-family: 'Raleway', sans-serif;
+    color: #8EBB61;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
