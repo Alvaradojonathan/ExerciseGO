@@ -10,7 +10,6 @@ textarea {
     font-family: 'Roboto', sans-serif;
 }
 
-
 /*maps*/
 #map {
     margin-top: 5%;
@@ -37,7 +36,6 @@ textarea {
     font-family: 'Montserrat', sans-serif;
     color: slategray;
     box-shadow: 2px 2px 2px gray;
-    /*max-width: 1388.36px;*/
     margin: 0px;
 }
 
@@ -49,6 +47,7 @@ textarea {
     margin-top: 0px;
     border-top: 0px;
 }
+
 /*login page*/
 #loginPage {
     background-image: url('Image/bigstock-collage-of-sport-photos-with-p-150968885.jpg');
@@ -59,7 +58,6 @@ textarea {
 }
 
 /*navbar!!*/
-
 .navbar-brand {
     text-align: justify;
     margin-top: 0px;
@@ -111,21 +109,22 @@ textarea {
 .nav-collapse > li {
     float: right;
 }
+
 .btn-group {
-    float:right;
-    padding-top:8px;
-    padding-bottom:10px;
-    padding-left:15px;
-    padding-right:15px;
-    background-color:transparent;
+    float: right;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: transparent;
 }
 
-.btn-group:hover{
-    background-color:#efefef;
-}
+    .btn-group:hover {
+        background-color: #efefef;
+    }
 
 .btn.btn-circle {
-    background-color:transparent;
+    background-color: transparent;
 }
 
 .btn.btn-outline {
@@ -339,12 +338,12 @@ span.icon {
 
 #text {
     position: absolute;
-    left: 50px;
-    top: 175px;
-    width: 70%;
+    /*left: 50px;*/
+    top: 160px;
+    width: 100%;
     color: white;
     text-align: center;
-    font-size: 35px;
+    font-size: 27px;
     /*opacity:.7;*/
 }
 
@@ -355,20 +354,16 @@ span.icon {
     width: 70%;
     color: black;
     text-align: center;
-    font-size: 35px;
+    font-size: 20px;
     /*opacity:.7;*/
 }
+
 /*Home page divs hidden shown*/
 .popUpDiv {
     border: solid 0.5px;
     border-color: black;
     background-color: white;
     box-shadow: 2px 2px 2px darkgray;
-    /*background: gray; 
-    background: -webkit-linear-gradient(left, white, gray); 
-    background: -o-linear-gradient(right, white, gray); 
-    background: -moz-linear-gradient(right, white, gray); 
-    background: linear-gradient(to right, white, gray); */
     opacity: .8;
     margin: 0;
     margin-bottom: 10px;
@@ -383,6 +378,7 @@ span.icon {
     margin: .25px;
     margin-bottom: 0;
     cursor: pointer;
+    width: 224px;
 }
 
 #legs {
@@ -421,12 +417,10 @@ span.icon {
     padding: 0;
 }
 
-
 .picPad {
     margin: 20px;
     margin-left: 0;
     max-height: 228.61px;
-    
 }
 
     .picPad:hover {
@@ -437,9 +431,11 @@ span.icon {
     border: solid;
     border-color: black;
 }
+
 .picOpacity:hover {
     opacity: 0.8;
 }
+
 .topBtnPos {
     margin-top: 90px;
     padding-left: 50px;
