@@ -520,3 +520,19 @@ span.icon {
     box-shadow: 1px 1px 1px #DDDDDD;
 }
 /*UPPERCASE ids of Arms, Legs, etc. is for the Activity log page....lowercase for home page*/
+.pic-activity {
+    background-image: url('Image/loginpage_720.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100%;
+    padding-bottom:275px;
+}
+.new {
+    padding-left:375px;
+    padding-top:200px;
+}
+#title {
+    padding-left:125px;
+    padding-bottom:75px;
+    font-size:50px;
+}

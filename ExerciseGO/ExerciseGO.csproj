@@ -309,6 +309,7 @@
     <Content Include="Content\Image\F Glutes.png" />
     <Content Include="Content\Image\F Hamstrings.png" />
     <Content Include="Content\Image\F Squats.png" />
+    <Content Include="Content\Image\loginpage_720.jpg" />
     <Content Include="Content\Image\Logo With Text.png" />
     <Content Include="Content\Image\Minimized Logo.png" />
     <Content Include="Content\Image\M Abs.png" />
@@ -333,6 +334,7 @@
     <Content Include="Content\Image\rsz_chest.jpg" />
     <Content Include="Content\Image\rsz_legs2.jpg" />
     <Content Include="Content\Image\Step Machine.png" />
+    <Content Include="Content\Image\theatre.jpg" />
     <Content Include="Content\Image\Treadmill.png" />
     <Content Include="Content\Image\tricepScreenshot.jpg" />
     <Content Include="favicon.ico" />
