@@ -4,14 +4,14 @@
 
 @*Filter*@
 <div style="text-align:center">
-    <h6>Filter by: <button style="padding-left:15px; border:none; background-color:none; background:none" class="glyphicon glyphicon-chevron-down"></button></h6>
-    <div style="text-align:left; padding-left:30px; width:200px;" class="thumbnail container" id="filter">
-        <p><input id="Arms" type="checkbox"> <label for="Arms">Arms</label></p>
-        <p><input id="Back" type="checkbox"> <label for="Back">Back</label></p>
-        <p><input id="Chest" type="checkbox"> <label for="Chest">Chest</label></p>
-        <p><input id="Abs" type="checkbox"> <label for="Abs">Abs</label></p>
-        <p><input id="Legs" type="checkbox"> <label for="Legs">Legs</label></p>
-        <p><input id="Cardio" type="checkbox"> <label for="Cardio">Cardio</label></p>
+    <h6>Filter by: <button style="padding-left:15px; border:none; background-color:none; background:none;" class="glyphicon glyphicon-chevron-down" onclick="openFilterDiv();"></button></h6>
+    <div id="filter" style="text-align:left; padding-left:30px; width:200px; display:none;" class="thumbnail container" >
+        <p><input id="Arms" type="checkbox" onclick="openArmsDiv()"> <label for="Arms">Arms</label></p>
+        <p><input id="Back" type="checkbox" onclick="openBackDiv()"> <label for="Back">Back</label></p>
+        <p><input id="Chest" type="checkbox" onclick="openChestDiv()"> <label for="Chest">Chest</label></p>
+        <p><input id="Abs" type="checkbox" onclick="openAbsDiv()"> <label for="Abs">Abs</label></p>
+        <p><input id="Legs" type="checkbox" onclick="openLegsDiv()"> <label for="Legs">Legs</label></p>
+        <p><input id="Cardio" type="checkbox" onclick="openCardioDiv()"> <label for="Cardio">Cardio</label></p>
     </div>
 </div>
 
