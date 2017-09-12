@@ -1,16 +1,15 @@
 ﻿@using ExerciseGO.Models
 @model LoginViewModel
-@{
-    ViewBag.Title = "";
-}
 
-<div class="text-center" id="loginPage" style="height:637px;">
+
+<div class="text-center" id="loginPage" style="padding-top: 180px; padding-bottom: 180px;">
+
     <div class="logo"></div>
     <!-- Main Form -->
-    <div class="box" style="margin-top:140px;">
-        <h1 style="padding-top:35px;">Login or <a href="/Account/Register">Register</a></h1>
-        <div class="row" style="padding-top:25px;">
-            <hr style="margin-top:0px;" />
+    <div class="box" >
+        <h1 style="padding-top:20px; padding-bottom:15px;">Login or <a href="/Account/Register">Register</a></h1>
+        <div class="row">
+            <hr style="margin-top:0px; width:80%;" />
             <div class="col-md-6 col-md-offset-1">
                 <section id="loginForm">
                     @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
@@ -23,9 +22,7 @@
                                 @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
                             </div>
                         </div>
-
                         <div class="form-group margin-bottom-sm">
-
                             <div class="col-md-10">
                                 @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password" })
                                 @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
@@ -42,18 +39,12 @@
                     }
                 </section>
             </div>
-
             <div class="col-md-4">
                 @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
             </div>
         </div>
-        <div class="text1">
-            <p>This app is for beginners to show how to work out every major target area of the body. ExerciseGo provides users with video based workouts and an activity log that tracks your progress!</p>
-        </div>
     </div>
 </div>
-
-
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }

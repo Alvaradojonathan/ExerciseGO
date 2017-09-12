@@ -241,7 +241,7 @@ function closeWindowFive() {
 
 //Activity Log filtering
 $(document).ready(function () {
-    $('.results > li').hi();
+    $('.results > li').hide();
 
     $('div.tags').find('input:checkbox').live('click', function () {
         $('.results > li').hide();
@@ -327,3 +327,34 @@ $(document).ready(function () {
         });
     });
 });
+function divSwitch() {
+    
+    var x = document.getElementById('legs');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('divContainer');
+    if (x.style.display === 'none') {
+        x.style.display = 'Block';
+    }    
+    x = document.getElementById('arms');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('back');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('chest');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('abs');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('cardio');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    }
+}

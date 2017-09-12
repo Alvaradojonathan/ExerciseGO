@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-fixed-top" style="margin:0px; background-color:#ffffff;">
+    <nav class="navbar navbar-fixed-top" style="margin:0px; background-color:ghostwhite;">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1"></button>
@@ -19,8 +19,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-
             </div>
+
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <a class="navbar-brand active" href="~/Home/Index"><img style="padding :4px;" src="~/Content/Image/newLogo.png" /></a>
                 <ul class="nav navbar-nav navbar-right">
@@ -33,33 +33,30 @@
                         Activity Log
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="~/ActivityLogs/Index#cardioActivity">Cardio</a></li>
+                        <li><a href="~/ActivityLogs/Index#legsActivitys">Legs</a></li>
+                        <li><a href="~/ActivityLogs/Index#armsActivity">Arms</a></li>
                         <li><a href="~/ActivityLogs/Index#backActivity">Back</a></li>
                         <li><a href="~/ActivityLogs/Index#chestActivity">Chest</a></li>
                         <li><a href="~/ActivityLogs/Index#absActivity">Abs</a></li>
-                        <li><a href="~/ActivityLogs/Index#legsActivitys">Legs</a></li>
-                        <li><a href="~/ActivityLogs/Index#armsActivity">Arms</a></li>
+                        <li><a href="~/ActivityLogs/Index#cardioActivity">Cardio</a></li>   
                     </ul>
-            </div>
+                </div>
 
-            @*<ul class="collapse nav navbar-nav nav-collapse" id="nav-collapse1" style="">
-                <li><a href="#Cardio" onclick="myFunctionFive()">Cardio</a></li>
-                <li><a href="#Back " onclick="myFunctionTwo()">Back</a></li>
-                <li><a href="#Chest" onclick="myFunctionThree()">Chest</a></li>
-                <li><a href="#Abs" onclick="myFunctionFour()">Abs</a></li>
-                <li><a href="#Legs" onclick="myFunction()">Legs</a></li>
-                <li><a href="#Arms" onclick="myFunctionOne()">Arms</a></li>
-            </ul> *@
-        </div><!-- /.navbar-collapse -->
+                <div class="btn-group">
+                    <a href="~/Home/Index#cardio" onclick="divSwitch()" aria-haspopup="true" aria-expanded="false">
+                        Target Areas
+                    </a>
+                    </div>
+            </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
     </nav><!-- /.navbar -->
 
     @RenderBody()
-
-
+    
     <footer>
         <p>&copy; @DateTime.Now.Year - ExerciseGo Web Application</p>
     </footer>
+
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
