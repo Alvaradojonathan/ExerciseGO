@@ -144,7 +144,7 @@ body > nav {
 /*=== 1. General Structure ===*/
 html,
 body {
-    background: #efefef;
+    background: #949292;
     max-width: 100%;
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
@@ -418,9 +418,10 @@ span.icon {
 
 /*Home page divs hidden shown*/
 .popUpDiv {
-    border: solid 0.5px;
-    border-color: black;
-    background-color: ghostwhite;
+
+    border: solid 0.02px;
+    border-color: #d1cccc;
+    background-color: white;
     box-shadow: 2px 2px 2px darkgray;
     opacity: .8;
     margin: 0;
@@ -488,8 +489,8 @@ span.icon {
     }
 
 .picBorder {
-    border: solid 0.5px;
-    border-color: black;
+    border: solid 0.02px;
+    border-color: #d1cccc;
 }
 
 .picOpacity:hover {
