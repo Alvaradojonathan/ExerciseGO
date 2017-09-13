@@ -135,7 +135,7 @@ textarea {
 /*=== 1. General Structure ===*/
 html,
 body {
-    background: #efefef;
+    background: #949292;
     max-width: 100%;
     /*height: 637px;*/
     overflow-x: hidden;
@@ -319,8 +319,8 @@ span.icon {
 }
 /*Home page divs hidden shown*/
 .popUpDiv {
-    border: solid 0.5px;
-    border-color: black;
+    border: solid 0.02px;
+    border-color: #d1cccc;
     background-color: white;
     box-shadow: 2px 2px 2px darkgray;
     opacity: .8;
@@ -377,8 +377,8 @@ span.icon {
         opacity: 0.7;
     }
 .picBorder {
-    border: solid 0.5px;
-    border-color: black;
+    border: solid 0.02px;
+    border-color: #d1cccc;
 }
 .picOpacity:hover {
     opacity: 0.8;
