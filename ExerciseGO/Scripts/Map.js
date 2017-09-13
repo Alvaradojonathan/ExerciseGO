@@ -354,3 +354,12 @@ function scrollDown() {
         scrollTop: $("#divContainer").offset().top - 143
     }, 2500);    
 }
+
+function openAllActivityDivs() {
+    document.getElementById('Arms').click();
+    document.getElementById('Back').click();
+    document.getElementById('Cardio').click();
+    document.getElementById('Chest').click();
+    document.getElementById('Legs').click();
+    document.getElementById('Abs').click();
+}

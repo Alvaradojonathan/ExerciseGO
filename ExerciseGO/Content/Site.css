@@ -2,6 +2,7 @@
 .dl-horizontal dt {
     white-space: normal;
 }
+
 input,
 select,
 textarea {
@@ -10,11 +11,8 @@ textarea {
 }
 /*maps*/
 #map {
-    margin-top: 5%;
-    height: 70%;
-    height: 350px;
-    margin-top: 5%;
-    height: 70%;
+    margin-top: 1%;
+    height: 400px;
 }
 /*landing page main picture*/
 .parallax {
@@ -37,6 +35,7 @@ textarea {
     box-shadow: 2px 2px 2px gray;
     margin: 0px;
 }
+
 .dividerShadow {
     border: solid;
     border-color: ghostwhite;
@@ -52,30 +51,34 @@ textarea {
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
-   
 }
 /*navbar!!*/
 .navbar-brand {
     text-align: justify;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-top: 0px;    
+    padding-top: 0px;
 }
+
 body > nav {
-box-shadow: .5px .5px 5px #888888;
+    box-shadow: .5px .5px 5px #888888;
 }
+
 .navbar-nav.navbar-right .btn {
     position: relative;
     z-index: 2;
     padding: 4px 20px;
     margin: 10px auto;
 }
+
 .navbar .navbar-collapse {
     position: relative;
 }
+
     .navbar .navbar-collapse .navbar-right > li:last-child {
         padding-left: 22px;
     }
+
 .navbar .nav-collapse {
     position: absolute;
     z-index: 1;
@@ -86,21 +89,26 @@ box-shadow: .5px .5px 5px #888888;
     margin: 0;
     padding-right: 120px;
     padding-left: 80px;
-    width: 100%;    
+    width: 100%;
 }
+
 .navbar.navbar-default .nav-collapse {
     background-color: #f8f8f8;
 }
+
 .navbar.navbar-inverse .nav-collapse {
     background-color: #222;
 }
+
 .navbar .nav-collapse .navbar-form {
     border-width: 0;
     box-shadow: none;
 }
+
 .nav-collapse > li {
     float: right;
 }
+
 .btn-group {
     float: right;
     padding-top: 8px;
@@ -109,32 +117,39 @@ box-shadow: .5px .5px 5px #888888;
     padding-right: 15px;
     background-color: transparent;
 }
+
     .btn-group:hover {
         background-color: #efefef;
     }
+
 .btn.btn-circle {
     background-color: transparent;
 }
+
 .btn.btn-outline {
     background-color: transparent;
 }
+
 @media screen and (max-width: 767px) {
     .navbar .navbar-collapse .navbar-right > li:last-child {
         padding-left: 15px;
         padding-right: 15px;
     }
+
     .navbar .nav-collapse {
         margin: 7.5px auto;
         padding: 0;
     }
+
         .navbar .nav-collapse .navbar-form {
             margin: 0;
         }
+
     .nav-collapse > li {
         float: none;
     }
 }
-/*login page*/
+
 /*=== 1. General Structure ===*/
 html,
 body {
@@ -143,11 +158,26 @@ body {
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
 }
-#activityLogBtn {
-    color: #8EBB61;
-}
-    #activityLogBtn:hover {
 
+#activityLogBtn {
+    color: #aaaaaa;
+    background-color: none;
+    border: none;
+    background: none;
+}
+
+    #activityLogBtn:hover {
+        color: #8EBB61;
+        background-color: none;
+        border: none;
+        background: none;
+    }
+
+    #activityLogBtn::selection {
+        color: #8EBB61;
+        background-color: none;
+        border: none;
+        background: none;
     }
 
 a {
@@ -159,8 +189,6 @@ a {
         color: #8EBB61;
         text-decoration: none;
     }
-
-/*=== 9. Misc ===*/
 
 /*used to close target area divs*/
 .arrow {
@@ -176,14 +204,17 @@ a {
     padding: 8px 3px;
     text-decoration: none;
 }
+
     .arrow:before {
         content: "x";
     }
+
 #socialLoginList {
     text-align: center;
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 #Facebook {
     display: inline-block;
     background: #8B9DC3;
@@ -195,14 +226,17 @@ a {
     white-space: nowrap;
     margin-top: 12px;
 }
+
     #Facebook:hover {
         cursor: pointer;
         background: #4267B2;
     }
+
 span.label {
     font-family: serif;
     font-weight: normal;
 }
+
 span.icon {
     background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
     display: inline-block;
@@ -210,6 +244,7 @@ span.icon {
     width: 42px;
     height: 42px;
 }
+
 span.buttonText {
     display: inline-block;
     vertical-align: middle;
@@ -217,6 +252,7 @@ span.buttonText {
     padding-right: 42px;
     font-size: 14px;
 }
+
 #Google {
     display: inline-block;
     background: #EA4335;
@@ -227,14 +263,17 @@ span.buttonText {
     box-shadow: 1px 1px 1px grey;
     white-space: nowrap;
 }
+
     #Google:hover {
         cursor: pointer;
         background: #FF0000;
     }
+
 span.label {
     font-family: serif;
     font-weight: normal;
 }
+
 span.icon {
     background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
     display: inline-block;
@@ -242,6 +281,7 @@ span.icon {
     width: 42px;
     height: 42px;
 }
+
 span.buttonText {
     display: inline-block;
     vertical-align: middle;
@@ -249,6 +289,7 @@ span.buttonText {
     padding-right: 42px;
     font-size: 14px;
 }
+
 #loginPage > div.box {
     width: 615px;
     height: 300px;
@@ -279,13 +320,33 @@ div.form-group {
     white-space: nowrap;
     display: inline-block;
     vertical-align: middle;
-    padding:7px;
+    padding: 7px;
+    margin-bottom: 5px;
 }
 
-    #showAll:hover {
-        cursor: pointer;
-        background: #3A7A22;
+    #showAll > a {
+        color: #ffffff;
     }
+
+.showAll {
+    display: inline-block;
+    background: #99C968;
+    color: #ffffff;
+    width: 140px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px darkgray;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 7px;
+    margin-bottom: 5px;
+}
+
+#showAll:hover {
+    cursor: pointer;
+    background: #3A7A22;
+}
 
 span.label {
     font-family: serif;
@@ -312,14 +373,17 @@ span.icon {
     display: inline-block;
     vertical-align: middle;
 }
+
     #loginButton:hover {
         cursor: pointer;
         background: #3A7A22;
     }
+
 span.label {
     font-family: serif;
     font-weight: normal;
 }
+
 span.icon {
     background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
     display: inline-block;
@@ -331,22 +395,26 @@ span.icon {
 #loginButton:hover {
     cursor: pointer;
 }
+
 .etc-login-form {
     margin-left: 1px;
 }
+
 #heading {
     padding: 10px;
 }
+
 #text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     position: absolute;
-    /*left: 50px;*/
     top: 160px;
     width: 100%;
     color: white;
     text-align: center;
     font-size: 27px;
-    /*opacity:.7;*/
 }
+
 #textPic {
     position: absolute;
     right: 0;
@@ -368,6 +436,7 @@ span.icon {
     margin: 0;
     margin-bottom: 10px;
 }
+
 .divGrid {
     padding-left: 0px;
     padding-right: 0px;
@@ -379,36 +448,43 @@ span.icon {
     cursor: pointer;
     width: 224px;
 }
+
 #legs {
     display: none;
     margin-top: 10px;
     padding: 0;
 }
+
 #arms {
     display: none;
     margin-top: 10px;
     padding: 0;
 }
+
 #abs {
     display: none;
     margin-top: 10px;
     padding: 0;
 }
+
 #chest {
     display: none;
     margin-top: 10px;
     padding: 0;
 }
+
 #back {
     display: none;
     margin-top: 10px;
     padding: 0;
 }
+
 #cardio {
     display: none;
     margin-top: 10px;
     padding: 0;
 }
+
 .picPad {
     margin: 20px;
     margin-left: 0;
@@ -416,33 +492,41 @@ span.icon {
     width: 412px;
     height: 229px;
 }
+
     .picPad:hover {
         opacity: 0.7;
     }
+
 .picBorder {
     border: solid 0.5px;
     border-color: black;
 }
+
 .picOpacity:hover {
     opacity: 0.8;
 }
+
 .topBtnPos {
     margin-top: 90px;
     padding-left: 50px;
 }
+
 .bottomBtnPos {
     margin-top: 20px;
     padding-left: 50px;
 }
+
 .btnColor {
     background-color: white;
     border-radius: 15px;
     padding: 5px;
 }
+
     .btnColor:hover {
         cursor: pointer;
         background-color: #20e278;
     }
+
     .btnColor:focus {
         outline: 0;
     }
@@ -452,26 +536,32 @@ span.icon {
     display: none;
     box-shadow: 1px 1px 1px darkgray;
 }
+
 #chestActivity {
     display: none;
     box-shadow: 1px 1px 1px darkgray;
 }
+
 #absActivity {
     display: none;
     box-shadow: 1px 1px 1px darkgray;
 }
+
 #backActivity {
     display: none;
     box-shadow: 1px 1px 1px darkgray;
 }
+
 #legsActivity {
     display: none;
     box-shadow: 1px 1px 1px darkgray;
 }
+
 #cardioActivity {
     display: none;
     box-shadow: 1px 1px 1px darkgray;
 }
+
 #post {
     margin-left: 40px;
     background-color: #F9F4C2;
@@ -486,19 +576,22 @@ span.icon {
     font-weight: 600;
     padding-bottom: 10px;
 }
+
 #videoDiv {
     box-shadow: 5px 5px 5px gray;
     margin: 0px;
     padding: 20px;
 }
+
 .backPic {
     background-image: url('Image/gym3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    height:637px;
+    height: 637px;
 }
+
 .outer {
     background-image: url('Image/gym2.jpg');
     background-size: cover;
@@ -507,11 +600,11 @@ span.icon {
     margin: 0 auto;
     display: block;
     text-align: center;
-    height: 697px;
+    height: 637px;
     padding-top: 115px;
-
-   
+    overflow-x: hidden;
 }
+
 .inner {
     position: relative;
     background-color: ghostwhite;
@@ -521,4 +614,23 @@ span.icon {
     box-shadow: 10px 10px 2px gray;
     margin: 0;
     padding: 20px;
+}
+
+#divContainer {
+    margin-top: 10px;
+}
+
+h1 {
+    color: #8EBB61;
+    text-align: center;
+}
+
+.outer2 {
+    background-image: url('Image/gym2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    height: 637px;
+    overflow-x: hidden;
 }
