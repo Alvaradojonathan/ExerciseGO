@@ -239,6 +239,18 @@ function closeWindowFive() {
     }
 }
 
+//Activity Log filtering
+$(document).ready(function () {
+    $('.results > li').hide();
+
+    $('div.tags').find('input:checkbox').live('click', function () {
+        $('.results > li').hide();
+        $('div.tags').find('input:checked').each(function () {
+            $('.results > li.' + $(this).attr('rel')).show();
+        });
+    });
+});
+
 //UPPERCASE ids of Arms, Legs, etc. is for the Activity log page....lowercase for home page
 function openArmsDiv() {
 
@@ -302,4 +314,43 @@ function openFilterDiv() {
     } else {
         x.style.display = 'block';
     }
+}
+
+
+function divSwitch() {
+
+    var x = document.getElementById('legs');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('divContainer');
+    if (x.style.display === 'none') {
+        x.style.display = 'Block';
+    }
+    x = document.getElementById('arms');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('back');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('chest');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('abs');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    }
+    x = document.getElementById('cardio');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    }
+}
+
+function scrollDown() {
+    $('html, body').animate({
+        scrollTop: $("#divContainer").offset().top - 143
+    }, 2500);    
 }

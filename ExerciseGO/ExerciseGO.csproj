@@ -211,11 +211,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\IdentityConfig.cs" />
-    <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Properties\App_Start\BundleConfig.cs" />
+    <Compile Include="Properties\App_Start\FilterConfig.cs" />
+    <Compile Include="Properties\App_Start\IdentityConfig.cs" />
+    <Compile Include="Properties\App_Start\RouteConfig.cs" />
+    <Compile Include="Properties\App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ActivityLogsController.cs" />
     <Compile Include="Controllers\EmojisController.cs" />
@@ -294,6 +294,10 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Image\default.png" />
+    <Content Include="Content\Image\F Bicep.jpg" />
+    <Content Include="Content\Image\gym1.JPG" />
+    <Content Include="Content\Image\gym2.jpg" />
+    <Content Include="Content\Image\gym3.jpg" />
     <Content Include="Content\Image\loginPage.jpg" />
     <Content Include="Content\Image\default.png" />
     <Content Include="Content\Image\loginPage.jpg" />
@@ -353,7 +357,6 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ExerciseGODB.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="landingPage.js" />
     <Content Include="Models\ExerciseGODB.edmx.diagram">
       <DependentUpon>ExerciseGODB.edmx</DependentUpon>
     </Content>
