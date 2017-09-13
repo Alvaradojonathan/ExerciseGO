@@ -27,7 +27,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li id="mapGym"><a href="~/Home/About">Gym Locations</a></li>
                     <li>
-                        <a href="~/Home/Index" onclick="divSwitch()" aria-haspopup="true" aria-expanded="false">
+                        <a href="~/Home/Index#divContainer" onclick="divSwitch()" aria-haspopup="true" aria-expanded="false">
                             Target Areas
                         </a>
                     </li>
@@ -45,11 +45,14 @@
                         <li><a href="~/ActivityLogs/Index#absActivity">Abs</a></li>
                         <li><a href="~/ActivityLogs/Index#cardioActivity">Cardio</a></li>
                     </ul>
-                </div>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
     </nav><!-- /.navbar -->
     @RenderBody()
+
+    <footer style="text-align:center; color:white;">
+        2017-ExerciseGO!
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

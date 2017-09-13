@@ -45,6 +45,17 @@ a {
     text-align: center;
 }
 
+#introText {
+    color:ghostwhite;
+    padding-top:225px;
+    padding-right:25px;
+    font-weight:bold;
+    font-size:36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:bold;
+    text-align:center;
+}
+
 /*Landing Page Divider Bar*/
 #divider {
     text-align: center;
@@ -53,7 +64,6 @@ a {
     padding-bottom: 7px;
     font-family: 'Montserrat', sans-serif;
     color: slategray;
-    box-shadow: 2px 2px 2px gray;
     margin: 0px;
 }
 
@@ -370,9 +380,10 @@ div.form-group {
 
 /*Home page divs hidden shown*/
 .popUpDiv {
-    border: solid 0.5px;
-    border-color: black;
-    background-color: ghostwhite;
+
+    border: solid 0.02px;
+    border-color: #d1cccc;
+    background-color: white;
     box-shadow: 2px 2px 2px darkgray;
     opacity: .8;
     margin: 0;
@@ -440,8 +451,8 @@ div.form-group {
     }
 
 .picBorder {
-    border: solid 0.5px;
-    border-color: black;
+    border: solid 0.02px;
+    border-color: #d1cccc;
 }
 
 .picOpacity:hover {
@@ -609,7 +620,7 @@ div.form-group {
     margin-top:5px;
 }
 
-#divContainer {
+.divContainer {
     margin-top: 10px;
 }
 

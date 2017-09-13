@@ -1,14 +1,11 @@
 @model ExerciseGO.Models.HomeViewModel
-
 <div class="parallax">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <h1 style="color:ghostwhite;padding-top:340px;padding-right:25px; font-weight:bold; font-size:36px; font-family: 'Raleway', sans-serif; font-weight:bold; text-align:center;">
-        Watch our videos
-        <br />
-        Record your progress
-        <br />
-        Get fit! Go!
-    </h1>
+    <div id="introText">
+        <p>Watch Our Videos</p>
+        <p>Record Your Progress</p>
+        <p>Get Fit! Go!</p>
+    </div>
 
     @if (User.Identity.IsAuthenticated)
     {
@@ -27,15 +24,14 @@
     }
 </div>
 
-
 <div class="row dividerShadow" id="divider">
-    <h1 style="color:#8EBB61; background-color:ghostwhite; font-family: 'Raleway', sans-serif; font-weight:bold;">
+    <h1 style="color:#36453a; background-color:ghostwhite; font-family: 'Raleway', sans-serif; font-weight:bold;">
         TARGET AREAS
     </h1>
 </div>
 
 <div class="container-fluid" id="divContainer">
-    <div class="row" style="margin-top:.5px;" onmouseover="scrollDown()">
+    <div class="row" style="margin-top:.5px;" onmouseenter="scrollDown()" onmouseleave="scrollUp()">
         <div class="col-md-2 col-sm-12 divGrid" onclick="openWindow();">
             <img class="img-responsive picOpacity" src="~/Content/Image/rsz_legs2.jpg" style="margin-left:1px;" />
             <h1 id="text">LEGS</h1>
@@ -70,8 +66,8 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
-                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#legsActivity">Legs Activity History</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
+                    <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index">Legs Activity History</a></div>
                 </div>
                 <div class="col-md-7">
                     <div class="row" style="margin-top: 100px; text-align:left;font-family: 'Raleway', sans-serif; ">
@@ -88,7 +84,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#legsActivity">Legs Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -106,7 +102,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#legsActivity">Legs Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -124,7 +120,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#legsActivity">Legs Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -142,7 +138,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#legsActivity">Legs Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -160,7 +156,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#legsActivity">Legs Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -184,7 +180,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#armsActivity">Arms Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -202,7 +198,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#armsActivity">Arms Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -220,7 +216,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#armsActivity">Arms Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -238,7 +234,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#armsActivity">Arms Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -262,7 +258,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#backActivity">Back Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -280,7 +276,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#backActivity">Back Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -298,7 +294,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#backActivity">Back Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -316,7 +312,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#backActivity">Back Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -328,8 +324,13 @@
         </div><div class="col-md-5">
             <a href="~/Videos/Details/26"><img class="img-responsive picPad picBorder" src="~/Content/Image/bonusBackScreenshot.jpg" /></a>
         </div>
+
+    </div><div class="col-md-5">
+        <a href="~/Videos/Details/26"><img class="img-responsive picPad picBorder" src="~/Content/Image/bonusBackScreenshot.jpg" /></a>
     </div>
 </div>
+</div>
+
 
 @*chest div*@
 
@@ -339,7 +340,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#chestActivity">Chest Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -357,7 +358,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#backActivity">Back Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -381,7 +382,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#absActivity">Abs Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -399,7 +400,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#absActivity">Abs Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -417,7 +418,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#absActivity">Abs Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -435,7 +436,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#absActivity">Abs Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -459,7 +460,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#cardioActivity">Cardio Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -477,7 +478,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#cardioActivity">Cardio Activity History</a></div>
                 </div>
                 <div class="col-md-7">
@@ -495,7 +496,7 @@
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="row topBtnPos"><a class="btnColor">Record Activity</a></div>
+                    <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>
                     <div class="row bottomBtnPos"><a class="btnColor" href="~/ActivityLogs/Index?#cardioActivity">Cardio Activity History</a></div>
                 </div>
                 <div class="col-md-7">
