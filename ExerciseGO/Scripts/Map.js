@@ -1,4 +1,5 @@
-﻿var map;
+﻿//Populate map
+var map;
 var infowindow;
 
 function initMap() {
@@ -56,7 +57,8 @@ function openWindow() {
         x.style.display = 'block';
     }
 }
-//this function legs div
+
+//display legs div
 function closeWindow() {
     var x = document.getElementById('legs');
     if (x.style.display === 'none') {
