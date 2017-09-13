@@ -295,6 +295,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Image\default.png" />
     <Content Include="Content\Image\F Bicep.jpg" />
+    <Content Include="Content\Image\gym1.JPG" />
+    <Content Include="Content\Image\gym2.jpg" />
+    <Content Include="Content\Image\gym3.jpg" />
     <Content Include="Content\Image\loginPage.jpg" />
     <Content Include="Content\Image\default.png" />
     <Content Include="Content\Image\loginPage.jpg" />
