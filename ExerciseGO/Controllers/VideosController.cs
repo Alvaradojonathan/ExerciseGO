@@ -10,6 +10,7 @@ using ExerciseGO.Models;
 
 namespace ExerciseGO.Controllers
 {
+    [Authorize]
     public class VideosController : Controller
     {
         private ExerciseGOEntities db = new ExerciseGOEntities();

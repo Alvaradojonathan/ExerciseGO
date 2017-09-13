@@ -1,8 +1,11 @@
 ﻿@model ExerciseGO.Models.Video
 
-<h2 style="margin-top:75px; text-align:center">@Html.DisplayFor(model => model.VideoName)</h2>
 
-<div class="col-md-offset-3">
-    <hr />
-    <iframe width="640" height="360" src="@Html.DisplayFor(model => model.VideoLink)" frameborder="0"></iframe>
+
+<div class="outer">
+    @*<div class="thumbnail container"style="width:750px; padding-bottom:20px;">*@
+        <h1 style="color:ghostwhite">@Html.DisplayFor(model => model.VideoName)</h1>
+        <iframe class="inner" @*style="border:0; margin:0; padding:0;"*@src="@Html.DisplayFor(model => model.VideoLink)"></iframe>
+    @*</div>*@
 </div>
+
