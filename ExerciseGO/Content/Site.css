@@ -165,13 +165,11 @@ body {
 }
 
 #activityLogBtn {
-    color: #aaaaaa;
-    transition: all ease-in-out 200ms;
+    color: #8EBB61;
 }
 
     #activityLogBtn:hover {
-        color: #8EBB61;
-        text-decoration: none;
+
     }
 
 a {
@@ -307,6 +305,38 @@ div.form-group {
     text-align: left;
 }
 
+#showAll {
+    display: inline-block;
+    background: #99C968;
+    color: #ffffff;
+    width: 140px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px darkgray;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    padding:7px;
+}
+
+    #showAll:hover {
+        cursor: pointer;
+        background: #3A7A22;
+    }
+
+span.label {
+    font-family: serif;
+    font-weight: normal;
+}
+
+span.icon {
+    background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+}
+
 #loginButton {
     display: inline-block;
     background: #99C968;
@@ -336,10 +366,6 @@ span.icon {
     vertical-align: middle;
     width: 42px;
     height: 42px;
-}
-
-#loginButton:hover {
-    cursor: pointer;
 }
 
 .etc-login-form {

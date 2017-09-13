@@ -4,7 +4,7 @@
 
 @*Filter*@
 <div style="text-align:center">
-    <h6>Filter by: <button style="padding-left:15px; border:none; background-color:none; background:none;" class="glyphicon glyphicon-chevron-down" onclick="openFilterDiv();"></button></h6>
+    <h6 class="container" style="padding-left:150px;">Filter by: <button style="padding-left:15px; border:none; background-color:none; background:none;" class="glyphicon glyphicon-chevron-down" onclick="openFilterDiv();"></button><button id="showAll" class="pull-right" onclick="openArmsDiv(), openBackDiv(), openChestDiv(), openAbsDiv(), openLegsDiv(), openCardioDiv()">Show All</button></h6>
     <div id="filter" style="text-align:left; padding-left:30px; width:200px; display:none;" class="thumbnail container" >
         <p><input id="Arms" type="checkbox" onclick="openArmsDiv()"> <label for="Arms">Arms</label></p>
         <p><input id="Back" type="checkbox" onclick="openBackDiv()"> <label for="Back">Back</label></p>
@@ -18,7 +18,7 @@
 @*Activity log sections*@
 <div id="armsActivity" class="container thumbnail row" style="margin:auto;">
     <div class="container">
-        <h3>Arms:</h3>
+        <h3>Arms:<a href="~/ActivityLogs/Create" class="pull-right">&#43; Add new</a></h3>
         @foreach (var arms in Model)
         {
             if (@Html.DisplayFor(modelItem => arms.TargetArea.TargetAreaName).ToString() == "Arms")
@@ -26,6 +26,7 @@
                 <div id="post" class="container thumbnail col-md-5">
                     <div style="padding:6px;">
                         <div class="row">
+                            <p class="container col-md-offset-11 col-md-1" style="font-size:28px; padding-top:0px; margin-top:0px;"><a href="~/ActivityLogs/Delete/@Html.DisplayFor(model => arms.ActivityLogID)">&times;</a></p>
                             <div class="col-md-3">
                                 <p>Reps: @Html.DisplayFor(modelItem => arms.TotalReps)</p>
                                 <div class="row">
@@ -50,7 +51,7 @@
 
 <div id="backActivity" class="container thumbnail row" style="margin:auto;">
     <div class="container">
-        <h3>Back:</h3>
+        <h3>Back:<a href="~/ActivityLogs/Create" class="pull-right">&#43; Add new</a></h3>
         @foreach (var back in Model)
         {
             if (@Html.DisplayFor(modelItem => back.TargetArea.TargetAreaName).ToString() == "Back")
@@ -58,6 +59,7 @@
                 <div id="post" class="container thumbnail col-md-5">
                     <div style="padding:6px;">
                         <div class="row">
+                            <p class="container col-md-offset-11 col-md-1" style="font-size:28px; padding-top:0px; margin-top:0px;"><a href="~/ActivityLogs/Delete/@Html.DisplayFor(model => back.ActivityLogID)">&times;</a></p>
                             <div class="col-md-3">
                                 <p>Reps: @Html.DisplayFor(modelItem => back.TotalReps)</p>
                                 <div class="row">
@@ -82,7 +84,7 @@
 
 <div id="chestActivity" class="container thumbnail row" style="margin:auto;">
     <div class="container">
-        <h3>Chest:</h3>
+        <h3>Chest:<a href="~/ActivityLogs/Create" class="pull-right">&#43; Add new</a></h3>
         @foreach (var chest in Model)
         {
             if (@Html.DisplayFor(modelItem => chest.TargetArea.TargetAreaName).ToString() == "Chest")
@@ -90,7 +92,7 @@
                 <div id="post" class="container thumbnail col-md-5">
                     <div style="padding:6px;">
                         <div class="row">
-
+                            <p class="container col-md-offset-11 col-md-1" style="font-size:28px; padding-top:0px; margin-top:0px;"><a href="~/ActivityLogs/Delete/@Html.DisplayFor(model => chest.ActivityLogID)">&times;</a></p>
                             <div class="col-md-3">
                                 <p>Reps: @Html.DisplayFor(modelItem => chest.TotalReps)</p>
                                 <div class="row">
@@ -115,7 +117,7 @@
 
 <div id="absActivity" class="container thumbnail row" style="margin:auto;">
     <div class="container">
-        <h3>Abs:</h3>
+        <h3>Abs:<a href="~/ActivityLogs/Create" class="pull-right">&#43; Add new</a></h3>
         @foreach (var abs in Model)
         {
             if (@Html.DisplayFor(modelItem => abs.TargetArea.TargetAreaName).ToString() == "Abs")
@@ -123,6 +125,7 @@
                 <div id="post" class="container thumbnail col-md-5">
                     <div style="padding:6px;">
                         <div class="row">
+                            <p class="container col-md-offset-11 col-md-1" style="font-size:28px; padding-top:0px; margin-top:0px;"><a href="~/ActivityLogs/Delete/@Html.DisplayFor(model => abs.ActivityLogID)">&times;</a></p>
                             <div class="col-md-3">
                                 <p>Reps: @Html.DisplayFor(modelItem => abs.TotalReps)</p>
                                 <div class="row">
@@ -147,7 +150,7 @@
 
 <div id="legsActivity" class="container thumbnail row" style="margin:auto;">
     <div class="container">
-        <h3>Legs:</h3>
+        <h3>Legs:<a href="~/ActivityLogs/Create" class="pull-right">&#43; Add new</a></h3>
         @foreach (var legs in Model)
         {
             if (@Html.DisplayFor(modelItem => legs.TargetArea.TargetAreaName).ToString() == "Legs")
@@ -155,6 +158,7 @@
                 <div id="post" class="container thumbnail col-md-5">
                     <div style="padding:6px;">
                         <div class="row">
+                            <p class="container col-md-offset-11 col-md-1" style="font-size:28px; padding-top:0px; margin-top:0px;"><a href="~/ActivityLogs/Delete/@Html.DisplayFor(model => legs.ActivityLogID)">&times;</a></p>
                             <div class="col-md-3">
                                 <p>Reps: @Html.DisplayFor(modelItem => legs.TotalReps)</p>
                                 <div class="row">
@@ -179,7 +183,7 @@
 
 <div id="cardioActivity" class="container thumbnail row" style="margin:auto;">
     <div class="container">
-        <h3>Cardio:</h3>
+        <h3>Cardio:<a href="~/ActivityLogs/Create" class="pull-right">&#43; Add new</a></h3>
         @foreach (var cardio in Model)
         {
             if (@Html.DisplayFor(modelItem => cardio.TargetArea.TargetAreaName).ToString() == "Cardio")
@@ -187,6 +191,7 @@
                 <div id="post" class="container thumbnail col-md-5">
                     <div style="padding:6px;">
                         <div class="row">
+                            <p class="container col-md-offset-11 col-md-1" style="font-size:28px; padding-top:0px; margin-top:0px;"><a href="~/ActivityLogs/Delete/@Html.DisplayFor(model => cardio.ActivityLogID)">&times;</a></p>
                             <div class="col-md-3">
                                 <p>Reps: @Html.DisplayFor(modelItem => cardio.TotalReps)</p>
                                 <div class="row">
