@@ -316,7 +316,6 @@ function openFilterDiv() {
     }
 }
 
-
 function divSwitch() {
 
     var x = document.getElementById('legs');
@@ -385,3 +384,4 @@ function selectDiv() {
         document.getElementById('Cardio').click();
     }
 }
+
