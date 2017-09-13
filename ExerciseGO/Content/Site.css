@@ -370,7 +370,6 @@ span.icon {
     border: none;
     box-shadow: 1px 1px 1px darkgray;
     white-space: nowrap;
-    display: inline-block;
     vertical-align: middle;
 }
 

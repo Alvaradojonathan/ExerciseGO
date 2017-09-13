@@ -6,8 +6,8 @@
     <iframe id="videoDiv" width="640" height="360" src="@Html.DisplayFor(model => model.VideoLink)" frameborder="0"></iframe>
 </div>*@
 <div class="outer">
-    <div class="thumbnail container"style="width:750px; padding-bottom:20px;">
-        <h1>@Html.DisplayFor(model => model.VideoName)</h1>
-        <iframe class="inner" style="border:0; margin:0; padding:0;"src="@Html.DisplayFor(model => model.VideoLink)"></iframe>
-    </div>
+    @*<div class="thumbnail container"style="width:750px; padding-bottom:20px;">*@
+        <h1 style="color:ghostwhite">@Html.DisplayFor(model => model.VideoName)</h1>
+        <iframe class="inner" @*style="border:0; margin:0; padding:0;"*@src="@Html.DisplayFor(model => model.VideoLink)"></iframe>
+    @*</div>*@
 </div>
