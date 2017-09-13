@@ -2,14 +2,14 @@
 @model LoginViewModel
 
 
-<div class="text-center" id="loginPage" style="padding-top: 180px; padding-bottom: 180px;">
+<div class="text-center" id="loginPage">
 
     <div class="logo"></div>
     <!-- Main Form -->
     <div class="box" >
-        <h1 style="padding-top:20px; padding-bottom:15px;">Login or <a href="/Account/Register">Register</a></h1>
+        <h1 id="loginHeading">Login or <a href="/Account/Register">Register</a></h1>
         <div class="row">
-            <hr style="margin-top:0px; width:80%;" />
+            <hr />
             <div class="col-md-6 col-md-offset-1">
                 <section id="loginForm">
                     @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))

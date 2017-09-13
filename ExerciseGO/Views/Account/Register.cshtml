@@ -1,12 +1,12 @@
 ﻿@using ExerciseGO.Models
 @model RegisterViewModel
 
-<div class="text-center" id="loginPage" style="padding-top: 180px; padding-bottom: 180px;">
+<div class="text-center" id="loginPage">
     <!-- Main Form -->
     <div class="box">
-        <h1 style="padding-top:20px; padding-bottom:15px;">Register or <a href="/Account/Login">Login</a></h1>
+        <h1 id="loginHeading">Register or <a href="/Account/Login">Login</a></h1>
         <div class="row" >
-            <hr style="margin-top:0px; width:80%;" />
+            <hr />
             <div class="col-md-6 col-md-offset-1">
                 <section id="loginForm">
                     @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
@@ -41,9 +41,6 @@
                 @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
             </div>
         </div>
-        @*<div class="text1">
-            <p>This app is for beginners to show how to work out every major target area of the body. ExerciseGo provides users with video based workouts and an activity log that tracks your progress!</p>
-        </div>*@
     </div>
 </div>
 
