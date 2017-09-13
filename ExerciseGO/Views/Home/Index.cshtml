@@ -1,8 +1,8 @@
 @model ExerciseGO.Models.HomeViewModel
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <div class="parallax">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <h1 style="color:ghostwhite;padding-top:340px;padding-right:25px; font-weight:bold; font-size:36px; font-family: 'Raleway', sans-serif; font-weight:bold; text-align:center;">
+    <h1 style="color:ghostwhite;padding-top:340px;padding-right:25px; font-weight:bold; font-size:36px; font-family: 'Raleway', sans-serif; font-weight:bold; text-align:center;" id="upDiv" >
         Watch our videos
         <br />
         Record your progress
@@ -16,7 +16,7 @@
     }
     else
     {
-        <div class="row container">
+        <div class="row container" >
             <div class="col-md-2 col-md-offset-5">
                 <button id="showAll"><a href="~/Account/Login">Login</a></button>
             </div>
@@ -37,7 +37,7 @@
 </div>
 
 <div class="container-fluid" id="divContainer">
-    <div class="row" style="margin-top:.5px;" onmouseover="scrollDown()">
+    <div class="row" style="margin-top:.5px;" onmouseenter="scrollDown()" onmouseleave="scrollUp()">
         <div class="col-md-2 col-sm-12 divGrid" onclick="openWindow();">
             <img class="img-responsive picOpacity" src="~/Content/Image/rsz_legs2.jpg" style="margin-left:1px;" />
             <h1 id="text">LEGS</h1>
@@ -68,8 +68,8 @@
 @*legs div*@
 <div class="container" id="legs">
     <h1 class="h1Text">Legs</h1>
-    <div class="row popUpDiv ">
-        <div class="col-md-7">
+    <div class="row popUpDiv " >
+        <div class="col-md-7" >
             <div class="row">
                 <div class="col-md-5">
                     <div class="row topBtnPos"><a class="btnColor" href="~/ActivityLogs/Create">Record Activity</a></div>

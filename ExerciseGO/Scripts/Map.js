@@ -239,17 +239,6 @@ function closeWindowFive() {
     }
 }
 
-//Activity Log filtering
-$(document).ready(function () {
-    $('.results > li').hide();
-
-    $('div.tags').find('input:checkbox').live('click', function () {
-        $('.results > li').hide();
-        $('div.tags').find('input:checked').each(function () {
-            $('.results > li.' + $(this).attr('rel')).show();
-        });
-    });
-});
 
 //UPPERCASE ids of Arms, Legs, etc. is for the Activity log page....lowercase for home page
 function openArmsDiv() {
@@ -316,6 +305,7 @@ function openFilterDiv() {
     }
 }
 
+
 function divSwitch() {
 
     var x = document.getElementById('legs');
@@ -348,11 +338,7 @@ function divSwitch() {
     }
 }
 
-function scrollDown() {
-    $('html, body').animate({
-        scrollTop: $("#divContainer").offset().top - 143
-    }, 2500);    
-}
+
 
 function openAllActivityDivs() {
     document.getElementById('Arms').click();
