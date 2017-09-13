@@ -363,3 +363,25 @@ function openAllActivityDivs() {
     document.getElementById('Legs').click();
     document.getElementById('Abs').click();
 }
+
+function selectDiv() {
+    var x = (window.location.href);
+    if (x.includes('armsActivity')) {
+        document.getElementById('Arms').click();
+    }
+    else if (x.includes('chestActivity')) {
+        document.getElementById('Chest').click();
+    }
+    else if (x.includes('backActivity')) {
+        document.getElementById('Back').click();
+    }
+    else if (x.includes('legsActivity')) {
+        document.getElementById('Legs').click();
+    }
+    else if (x.includes('absActivity')) {
+        document.getElementById('Abs').click();
+    }
+    else if (x.includes('cardioActivity')) {
+        document.getElementById('Cardio').click();
+    }
+}
