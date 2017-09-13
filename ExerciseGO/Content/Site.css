@@ -567,7 +567,6 @@ span.icon {
     border: none;
     box-shadow: 1px 1px 1px #DDDDDD;
 }
-<<<<<<< HEAD
 /*UPPERCASE ids of Arms, Legs, etc. is for the Activity log page....lowercase for home page*/
 .pic-activity {
     background-image: url('Image/loginpage_720.jpg');
@@ -585,7 +584,6 @@ span.icon {
     padding-bottom:75px;
     font-size:50px;
 }
-=======
 
 .h1Text {
     font-family: 'Raleway', sans-serif;
@@ -593,6 +591,7 @@ span.icon {
     text-align: center;
     font-weight: 600;
     padding-bottom: 10px;
+   
 }
 
 #videoDiv {
@@ -652,4 +651,3 @@ h1 {
     height: 637px;
     overflow-x: hidden;
 }
->>>>>>> c3407f4d6047a4fa066b44cf60fcad5cb0935780
