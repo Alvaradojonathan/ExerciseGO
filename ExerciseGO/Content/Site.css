@@ -12,7 +12,7 @@ textarea {
 
 html,
 body {
-    background: #efefef;
+    background: #949292;
     max-width: 100%;
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
@@ -585,7 +585,7 @@ div.form-group {
 
 .h1Text {
     font-family: 'Raleway', sans-serif;
-    color: #8EBB61;
+    color: ghostwhite;
     text-align: center;
     font-weight: 600;
     padding-bottom: 10px;
