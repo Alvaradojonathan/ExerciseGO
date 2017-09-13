@@ -304,8 +304,6 @@ function openFilterDiv() {
         x.style.display = 'block';
     }
 }
-
-
 function divSwitch() {
 
     var x = document.getElementById('legs');
