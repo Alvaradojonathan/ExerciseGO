@@ -67,15 +67,6 @@ a {
     margin: 0px;
 }
 
-.dividerShadow {
-    border: solid;
-    border-color: ghostwhite;
-    background-color: lightgray;
-    box-shadow: 0 1px 0 1px #323F48;
-    margin-top: 0px;
-    border-top: 0px;
-}
-
 /*Login Page*/
 #loginPage {
     background-image: url('Image/bigstock-collage-of-sport-photos-with-p-150968885.jpg');
