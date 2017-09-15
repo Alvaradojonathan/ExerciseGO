@@ -11,11 +11,12 @@ using Microsoft.AspNet.Identity;
 
 namespace ExerciseGO.Controllers
 {
+    [Authorize]
     public class ActivityLogsController : Controller
     {
         private ExerciseGOEntities db = new ExerciseGOEntities();
         // GET: ActivityLogs
-        [Authorize]
+        
         public ActionResult Index()
         {
             var user = User.Identity.GetUserId();
